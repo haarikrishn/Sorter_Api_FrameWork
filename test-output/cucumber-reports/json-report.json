@@ -1,0 +1,1131 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-04-14T13:52:23.922Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.Hooks.loadReportFile(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Verify the functionality of CreateOneDeliveryWithListOfItemsUsingDT",
+        "description": "",
+        "id": "verify-the-functionality-of-updatedeliveryinsorter-in-sorter;verify-the-functionality-of-createonedeliverywithlistofitemsusingdt",
+        "after": [
+          {
+            "result": {
+              "duration": 210000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.Hooks.onFinish(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 22000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "Give Username and Password for Access Token",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.GenericSteps.giveUsernameAndPasswordForAccessToken(io.cucumber.datatable.DataTable)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot()"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "integrator"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "3poXy$6o29"
+                ]
+              },
+              {
+                "cells": [
+                  "requestId",
+                  "8100000428-3"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 9,
+            "name": "Assigning Main Mandatory fields to CreateOneDeliveryWithListOfItemsUsingDTInSorter",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.SorterCreateDelivery31Step.assigningMainMandatoryFieldsToCreateOneDeliveryWithListOfItemsUsingDTInSorter(io.cucumber.datatable.DataTable)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot()"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "srcSiteId",
+                  "1014"
+                ]
+              },
+              {
+                "cells": [
+                  "dstSiteId",
+                  "4017"
+                ]
+              },
+              {
+                "cells": [
+                  "whNumber",
+                  "114"
+                ]
+              },
+              {
+                "cells": [
+                  "createdBy",
+                  "krish"
+                ]
+              },
+              {
+                "cells": [
+                  "totalGdsMvtStat",
+                  "A"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 15,
+            "name": "Provide dlvItemNum to CreateOneDeliveryWithListOfItemsUsingDTInSorter",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.SorterCreateDelivery31Step.provideDlvItemNumToCreateOneDeliveryWithListOfItemsUsingDTInSorter(io.cucumber.datatable.DataTable)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot()"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "itemSeq",
+                  "stoNum",
+                  "stoLineNum",
+                  "ean",
+                  "mrp",
+                  "matNum",
+                  "itemDesc",
+                  "matGrp",
+                  "catInd",
+                  "stLoc",
+                  "batch",
+                  "proposedDlvQty",
+                  "caselot",
+                  "uom",
+                  "itemWt",
+                  "uomWt",
+                  "itemVol",
+                  "uomVol",
+                  "pickStatus",
+                  "storageType",
+                  "leQty"
+                ]
+              },
+              {
+                "cells": [
+                  "0001",
+                  "5102747694",
+                  "10",
+                  "840222000156",
+                  "182",
+                  "200000346",
+                  "LG HING POWDER(100G)",
+                  "2SPOSPXXX",
+                  "S",
+                  "3000",
+                  "1C40050182",
+                  "100",
+                  "100",
+                  "EA",
+                  "0.132",
+                  "KG",
+                  "0.012",
+                  "FT3",
+                  "A",
+                  "HRS",
+                  "20"
+                ]
+              },
+              {
+                "cells": [
+                  "0002",
+                  "5102747694",
+                  "20",
+                  "840222000149",
+                  "92",
+                  "200000347",
+                  "LG HING POWDER(50G)",
+                  "2SPOSPXXX",
+                  "S",
+                  "3000",
+                  "1C40050092",
+                  "200",
+                  "200",
+                  "EA",
+                  "0.071",
+                  "KG",
+                  "0.007",
+                  "FT3",
+                  "A",
+                  "HRS",
+                  "20"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5222000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 24,
+            "name": "User calls the to createDelivery End point to   CreateOneDeliveryWithListOfItemsUsingDTInSoter",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.SorterCreateDelivery31Step.userCallsTheToCreateDeliveryEndPointToCreateOneDeliveryWithListOfItemsUsingDTInSoter()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 27000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 25,
+            "name": "verify that status code be equal to \"201\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"201\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.dmartLabs.stepdefinitions.GenericSteps.verifyThatStatusCodeBeEqualTo(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SorterCreateDeliveryAllFlowNew11"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-04-14T13:52:29.588Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.Hooks.loadReportFile(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "verify the functionality of UpdateDeliveryInSorter in sorter",
+        "description": "",
+        "id": "verify-the-functionality-of-updatedeliveryinsorter-in-sorter;verify-the-functionality-of-updatedeliveryinsorter-in-sorter",
+        "after": [
+          {
+            "result": {
+              "duration": 12000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.Hooks.onFinish(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 30,
+            "name": "Give Username and Password for Access Token",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.GenericSteps.giveUsernameAndPasswordForAccessToken(io.cucumber.datatable.DataTable)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot()"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "101201"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "Dmart@1234567"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 33,
+            "name": "send AdjustDelivery End point to AdjustDelivery  data in sorter",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.SorterAdjustDeliveryy34Step.sendAdjustDeliveryEndPointToAdjustDeliveryDataInSorter(io.cucumber.datatable.DataTable)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot()"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "dlvNumber",
+                  ""
+                ]
+              },
+              {
+                "cells": [
+                  "dock",
+                  "D1"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2104000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 36,
+            "name": "add items under vehicles in AdjustDeliveryInSorter",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.SorterAdjustDeliveryy34Step.addItemsUnderVehiclesInAdjustDeliveryInSorter(io.cucumber.datatable.DataTable)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot()"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "vehicleType",
+                  "vehicleRegNum"
+                ]
+              },
+              {
+                "cells": [
+                  "1109",
+                  ""
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 40,
+            "name": "verify data  is Updated or not in AdjustDelivery sorter",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.SorterAdjustDeliveryy34Step.verifyDataIsUpdatedOrNotInAdjustDeliverySorter()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 41,
+            "name": "verify that status code be equal to \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.dmartLabs.stepdefinitions.GenericSteps.verifyThatStatusCodeBeEqualTo(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot()"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@OptimizeDeliveryFlowNew12"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-04-14T13:52:31.765Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.Hooks.loadReportFile(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 46,
+        "name": "verify the functionality of UpdateDeliveryInSorter in sorter",
+        "description": "",
+        "id": "verify-the-functionality-of-updatedeliveryinsorter-in-sorter;verify-the-functionality-of-updatedeliveryinsorter-in-sorter",
+        "after": [
+          {
+            "result": {
+              "duration": 96000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.Hooks.onFinish(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 47,
+            "name": "Give Username and Password for Access Token",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.GenericSteps.giveUsernameAndPasswordForAccessToken(io.cucumber.datatable.DataTable)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot()"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "101201"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "Dmart@1234567"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6544000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 54,
+            "name": "send confirmDelivery End point to confirmDelivery  data in sorter",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.SorterConfirmDeliveryy35Step.sendConfirmDeliveryEndPointToConfirmDeliveryDataInSorter(io.cucumber.datatable.DataTable)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot()"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "siteId",
+                  "1014"
+                ]
+              },
+              {
+                "cells": [
+                  "deliveries",
+                  ""
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 147000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 57,
+            "name": "verify data  is Updated or not in confirmDelivery sorter",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.SorterConfirmDeliveryy35Step.verifyDataIsUpdatedOrNotInConfirmDeliverySorter()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 58,
+            "name": "verify that status code be equal to \"201\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"201\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.dmartLabs.stepdefinitions.GenericSteps.verifyThatStatusCodeBeEqualTo(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot()"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ConfirmDeliveryFlowNew13"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-04-14T13:52:38.604Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.Hooks.loadReportFile(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 64,
+        "name": "Verify the functionality of CreateTOWithListOftransferOrderItems",
+        "description": "",
+        "id": "verify-the-functionality-of-updatedeliveryinsorter-in-sorter;verify-the-functionality-of-createtowithlistoftransferorderitems",
+        "after": [
+          {
+            "result": {
+              "duration": 122000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.Hooks.onFinish(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 66,
+            "name": "Give Username and Password for Access Token",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.GenericSteps.giveUsernameAndPasswordForAccessToken(io.cucumber.datatable.DataTable)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot()"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "integrator"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "3poXy$6o29"
+                ]
+              },
+              {
+                "cells": [
+                  "requestId",
+                  "765423"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 70,
+            "name": "Assigning Main Mandatory fields to CreateTOWithListOftransferOrderItems",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.SorterCreatTOStep.assigningMainMandatoryFieldsToCreateTOWithListOftransferOrderItems(io.cucumber.datatable.DataTable)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot()"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "whNumber",
+                  "114"
+                ]
+              },
+              {
+                "cells": [
+                  "srcPlant",
+                  "1014"
+                ]
+              },
+              {
+                "cells": [
+                  "destPlant",
+                  "4017"
+                ]
+              },
+              {
+                "cells": [
+                  "grpDlv",
+                  "0009035909"
+                ]
+              },
+              {
+                "cells": [
+                  "movementType",
+                  "850"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 76,
+            "name": "Provide transferOrderItems to CreateTOWithListOftransferOrderItems",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.SorterCreatTOStep.provideTransferOrderItemsToCreateTOWithListOftransferOrderItems(io.cucumber.datatable.DataTable)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot()"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "txfOrdItemSeq",
+                  "matNumber",
+                  "matDesc",
+                  "ean",
+                  "batchNum",
+                  "srcStorageType",
+                  "srcStorageBin",
+                  "srcQty",
+                  "caselot",
+                  "uom",
+                  "mrp",
+                  "itemWeight",
+                  "itemVolume",
+                  "itemType",
+                  "binSeq",
+                  "bbDate",
+                  "storageLoc",
+                  "destStorageType",
+                  "palletQty",
+                  "availableBinQty"
+                ]
+              },
+              {
+                "cells": [
+                  "0001",
+                  "200000346",
+                  "LG HING POWDER(100G)",
+                  "840222000156",
+                  "1C40050182",
+                  "HRS",
+                  "A01-24-2C",
+                  "100.000",
+                  "100.00",
+                  "EA",
+                  "182.00",
+                  "0.132",
+                  "0.012",
+                  "ZBGR",
+                  "191",
+                  "20240412",
+                  "3000",
+                  "200",
+                  "600",
+                  "100"
+                ]
+              },
+              {
+                "cells": [
+                  "0002",
+                  "200000347",
+                  "LG HING POWDER(50G)",
+                  "840222000149",
+                  "1C40050092",
+                  "HRS",
+                  "A01-25-1B",
+                  "200.000",
+                  "200.00",
+                  "EA",
+                  "92.00",
+                  "0.071",
+                  "0.007",
+                  "ZBGR",
+                  "194",
+                  "20240412",
+                  "3000",
+                  "200",
+                  "1600",
+                  "200"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7691000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 85,
+            "name": "User calls the to create TO End point to CreateTOWithListOftransferOrderItems",
+            "match": {
+              "location": "com.dmartLabs.stepdefinitions.SorterCreatTOStep.userCallsTheToCreateTOEndPointToCreateTOWithListOftransferOrderItems()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.onBeforeStep()"
+                }
+              }
+            ],
+            "line": 86,
+            "name": "verify that status code be equal to \"201\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"201\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.dmartLabs.stepdefinitions.GenericSteps.verifyThatStatusCodeBeEqualTo(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.dmartLabs.stepdefinitions.Hooks.addScreenshot()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CreateTOForOriginalDeliveryFlowNew15"
+          }
+        ]
+      }
+    ],
+    "name": "verify the functionality of UpdateDeliveryInSorter in sorter",
+    "description": "",
+    "id": "verify-the-functionality-of-updatedeliveryinsorter-in-sorter",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/SingleSuite/SorterFlow1036.feature",
+    "tags": []
+  }
+]

@@ -1,0 +1,155 @@
+{
+  "type": "array",
+  "items": {
+  },
+  "definitions": {
+    "Welcome7Element": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "dlvNumber": {
+          "type": "string"
+        },
+        "proposedDlvDate": {
+          "type": "string"
+        },
+        "lastUpdatedDate": {
+          "type": "string",
+          "format": "integer"
+        },
+        "lastUpdatedTime": {
+          "type": "string"
+        },
+        "srcSiteId": {
+          "type": "string",
+          "format": "integer"
+        },
+        "dstSiteId": {
+          "type": "string",
+          "format": "integer"
+        },
+        "dispatchType": {
+          "$ref": "#/definitions/DispatchType"
+        },
+        "whNumber": {
+          "type": "string"
+        },
+        "totalTonnage": {
+          "type": "string"
+        },
+        "totalVolume": {
+          "type": "string"
+        },
+        "totalBoxes": {
+          "type": "integer"
+        },
+        "siteName": {
+          "$ref": "#/definitions/SiteName"
+        },
+        "deliveryStatus": {
+          "$ref": "#/definitions/DeliveryStatus"
+        },
+        "vehicles": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Vehicle"
+          }
+        },
+        "apiException": {
+          "type": "string"
+        },
+        "apiExceptionCreatedOn": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "deliveryStatus",
+        "dispatchType",
+        "dlvNumber",
+        "dstSiteId",
+        "lastUpdatedDate",
+        "lastUpdatedTime",
+        "proposedDlvDate",
+        "siteName",
+        "srcSiteId",
+        "totalBoxes",
+        "totalTonnage",
+        "totalVolume",
+        "whNumber"
+      ],
+      "title": "Welcome7Element"
+    },
+    "Vehicle": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "vehicleType": {
+          "$ref": "#/definitions/VehicleTypeUnion"
+        },
+        "vehicleRegNum": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "required": [
+        "vehicleRegNum",
+        "vehicleType"
+      ],
+      "title": "Vehicle"
+    },
+    "VehicleTypeUnion": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/VehicleTypeEnum"
+        },
+        {
+          "type": "string",
+          "format": "integer"
+        }
+      ],
+      "title": "VehicleTypeUnion"
+    },
+    "DeliveryStatus": {
+      "type": "string",
+      "enum": [
+        "CREATED",
+        "LOADED",
+        "CONFIRMED"
+      ],
+      "title": "DeliveryStatus"
+    },
+    "DispatchType": {
+      "type": "string",
+      "enum": [
+        "Pallet",
+        "Box"
+      ],
+      "title": "DispatchType"
+    },
+    "SiteName": {
+      "type": "string",
+      "enum": [
+        "Shaikpet Hyderabad DMart",
+        "Mulund"
+      ],
+      "title": "SiteName"
+    },
+    "VehicleTypeEnum": {
+      "type": "string",
+      "enum": [
+        "40FT",
+        "ACE",
+        "110A",
+        "ha"
+      ],
+      "title": "VehicleTypeEnum"
+    }
+  }
+}

@@ -1,0 +1,384 @@
+{
+
+  "type": "object",
+  "properties": {
+    "dlvNumber": {
+      "type": "string"
+    },
+    "dstSiteId": {
+      "type": "string"
+    },
+    "dstSiteName": {
+      "type": "string"
+    },
+    "srcSiteId": {
+      "type": "string"
+    },
+    "proposedDlvDate": {
+      "type": "string"
+    },
+    "deliveryStatus": {
+      "type": "string"
+    },
+    "dock": {
+      "type": "string"
+    },
+    "metrics": {
+      "type": "object",
+      "properties": {
+        "totalOriginalItems": {
+          "type": "integer"
+        },
+        "totalOriginalBoxes": {
+          "type": "integer"
+        },
+        "totalOriginalWt": {
+          "type": "number"
+        },
+        "totalOriginalVol": {
+          "type": "number"
+        },
+        "totalAdjustedItems": {
+          "type": "integer"
+        },
+        "totalAdjustedBoxes": {
+          "type": "integer"
+        },
+        "totalAdjustedWt": {
+          "type": "integer"
+        },
+        "totalAdjustedVol": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "totalOriginalItems",
+        "totalOriginalBoxes",
+        "totalOriginalWt",
+        "totalOriginalVol",
+        "totalAdjustedItems",
+        "totalAdjustedBoxes",
+        "totalAdjustedWt",
+        "totalAdjustedVol"
+      ]
+    },
+    "dlvItems": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "itemseq": {
+              "type": "string"
+            },
+            "dlvItemNum": {
+              "type": "string"
+            },
+            "stoNum": {
+              "type": "string"
+            },
+            "stoLineNum": {
+              "type": "string"
+            },
+            "ean": {
+              "type": "string"
+            },
+            "matNum": {
+              "type": "string"
+            },
+            "matGrp": {
+              "type": "string"
+            },
+            "catInd": {
+              "type": "string"
+            },
+            "mrp": {
+              "type": "integer"
+            },
+            "itemDesc": {
+              "type": "string"
+            },
+            "stLoc": {
+              "type": "string"
+            },
+            "batch": {
+              "type": "string"
+            },
+            "originalDlvQty": {
+              "type": "integer"
+            },
+            "adjustedDlvQty": {
+              "type": "integer"
+            },
+            "caselot": {
+              "type": "integer"
+            },
+            "uom": {
+              "type": "string"
+            },
+            "uomWt": {
+              "type": "string"
+            },
+            "leQty": {
+              "type": "integer"
+            },
+            "storageType": {
+              "type": "string"
+            },
+            "itemWt": {
+              "type": "number"
+            },
+            "itemVol": {
+              "type": "number"
+            },
+            "uomVol": {
+              "type": "string"
+            },
+            "updated": {
+              "type": "boolean"
+            },
+            "deleted": {
+              "type": "boolean"
+            },
+            "exceptions": {
+              "type": "null"
+            },
+            "conveyable": {
+              "type": "string"
+            },
+            "itemMetrics": {
+              "type": "object",
+              "properties": {
+                "totalOriginalBoxes": {
+                  "type": "integer"
+                },
+                "totalAdjustedBoxes": {
+                  "type": "integer"
+                },
+                "totalOriginalWt": {
+                  "type": "number"
+                },
+                "totalAdjustedWt": {
+                  "type": "integer"
+                },
+                "totalOriginalVol": {
+                  "type": "number"
+                },
+                "totalAdjustedVol": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "totalOriginalBoxes",
+                "totalAdjustedBoxes",
+                "totalOriginalWt",
+                "totalAdjustedWt",
+                "totalOriginalVol",
+                "totalAdjustedVol"
+              ]
+            }
+          },
+          "required": [
+            "itemseq",
+            "dlvItemNum",
+            "stoNum",
+            "stoLineNum",
+            "ean",
+            "matNum",
+            "matGrp",
+            "catInd",
+            "mrp",
+            "itemDesc",
+            "stLoc",
+            "batch",
+            "originalDlvQty",
+            "adjustedDlvQty",
+            "caselot",
+            "uom",
+            "uomWt",
+            "leQty",
+            "storageType",
+            "itemWt",
+            "itemVol",
+            "uomVol",
+            "updated",
+            "deleted",
+            "exceptions",
+            "conveyable",
+            "itemMetrics"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "itemseq": {
+              "type": "string"
+            },
+            "dlvItemNum": {
+              "type": "string"
+            },
+            "stoNum": {
+              "type": "string"
+            },
+            "stoLineNum": {
+              "type": "string"
+            },
+            "ean": {
+              "type": "string"
+            },
+            "matNum": {
+              "type": "string"
+            },
+            "matGrp": {
+              "type": "string"
+            },
+            "catInd": {
+              "type": "string"
+            },
+            "mrp": {
+              "type": "integer"
+            },
+            "itemDesc": {
+              "type": "string"
+            },
+            "stLoc": {
+              "type": "string"
+            },
+            "batch": {
+              "type": "string"
+            },
+            "originalDlvQty": {
+              "type": "integer"
+            },
+            "adjustedDlvQty": {
+              "type": "integer"
+            },
+            "caselot": {
+              "type": "integer"
+            },
+            "uom": {
+              "type": "string"
+            },
+            "uomWt": {
+              "type": "string"
+            },
+            "leQty": {
+              "type": "integer"
+            },
+            "storageType": {
+              "type": "string"
+            },
+            "itemWt": {
+              "type": "number"
+            },
+            "itemVol": {
+              "type": "number"
+            },
+            "uomVol": {
+              "type": "string"
+            },
+            "updated": {
+              "type": "boolean"
+            },
+            "deleted": {
+              "type": "boolean"
+            },
+            "exceptions": {
+              "type": "null"
+            },
+            "conveyable": {
+              "type": "string"
+            },
+            "itemMetrics": {
+              "type": "object",
+              "properties": {
+                "totalOriginalBoxes": {
+                  "type": "integer"
+                },
+                "totalAdjustedBoxes": {
+                  "type": "integer"
+                },
+                "totalOriginalWt": {
+                  "type": "number"
+                },
+                "totalAdjustedWt": {
+                  "type": "integer"
+                },
+                "totalOriginalVol": {
+                  "type": "number"
+                },
+                "totalAdjustedVol": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "totalOriginalBoxes",
+                "totalAdjustedBoxes",
+                "totalOriginalWt",
+                "totalAdjustedWt",
+                "totalOriginalVol",
+                "totalAdjustedVol"
+              ]
+            }
+          },
+          "required": [
+            "itemseq",
+            "dlvItemNum",
+            "stoNum",
+            "stoLineNum",
+            "ean",
+            "matNum",
+            "matGrp",
+            "catInd",
+            "mrp",
+            "itemDesc",
+            "stLoc",
+            "batch",
+            "originalDlvQty",
+            "adjustedDlvQty",
+            "caselot",
+            "uom",
+            "uomWt",
+            "leQty",
+            "storageType",
+            "itemWt",
+            "itemVol",
+            "uomVol",
+            "updated",
+            "deleted",
+            "exceptions",
+            "conveyable",
+            "itemMetrics"
+          ]
+        }
+      ]
+    },
+    "currentDriver": {
+      "type": "object",
+      "properties": {
+        "driverName": {
+          "type": "string"
+        },
+        "driverMobile": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "driverName",
+        "driverMobile"
+      ]
+    }
+  },
+  "required": [
+    "dlvNumber",
+    "dstSiteId",
+    "dstSiteName",
+    "srcSiteId",
+    "proposedDlvDate",
+    "deliveryStatus",
+    "dock",
+    "metrics",
+    "dlvItems",
+    "currentDriver"
+  ]
+}

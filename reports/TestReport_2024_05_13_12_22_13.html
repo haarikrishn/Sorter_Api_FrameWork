@@ -1,0 +1,432 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>PWP API Automation</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">PWP - CANARY Environment</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">May 13, 2024 12:22:13 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Create delivery for sorter using excel</p>
+            <p class="text-sm">
+              <span>12:22:13 PM</span> / <span>00:00:12:843</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Create delivery for sorter using excel</h5>
+<span class='badge badge-success'>05.13.2024 12:22:13 PM</span>
+<span class='badge badge-danger'>05.13.2024 12:22:26 PM</span>
+<span class='badge badge-default'>00:00:12:843</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:22:13 PM</td>
+        <td>
+          Give Username and Password to get Access Token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:22:13 PM</td>
+        <td>
+          Get the delivery number to create new delivery
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:22:13 PM</td>
+        <td>
+          Provide the proposed delivery date for a delivery
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:22:13 PM</td>
+        <td>
+          Give the source siteId for the delivery
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:22:13 PM</td>
+        <td>
+          Give the destination siteId for the delivery
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:22:13 PM</td>
+        <td>
+          Give the warehouse number of the source siteId
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:22:13 PM</td>
+        <td>
+          Give the name of a person creating a delivery
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:22:13 PM</td>
+        <td>
+          Get the date of creation of the delivery
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:22:13 PM</td>
+        <td>
+          Get the time of creation of the delivery
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:22:13 PM</td>
+        <td>
+          Provide the totalGdsMvtStat for the delivery
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:22:13 PM</td>
+        <td>
+          Give the Excel file to get the items for a delivery
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:22:14 PM</td>
+        <td>
+          Give the sheet name to get the items for which delivery has to be created
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:22:14 PM</td>
+        <td>
+          Requester calls the outbound delivery endpoint to create new delivery for a wave
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:22:15 PM</td>
+        <td>
+          Base URL is : https://canary.api.meradmart.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:22:15 PM</td>
+        <td>
+          Headers are - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:22:15 PM</td>
+        <td>
+          [Content-Type=application/json, username=integrator, password=3poXy$6o29, requestId=5001597022-1]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:22:15 PM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:22:16 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-0'></div>
+ <script>
+  function jsonTreeCreate0() { 
+   document.getElementById('code-block-json-0').innerHTML = JSONTree.create({"dlvNumber":"9714901035","proposedDlvDate":"20240513","srcSiteId":"1014","dstSiteId":"4017","whNumber":"114","createdBy":"yash","creationDate":"20240513","creationTime":"122213","totalGdsMvtStat":"A","dlvItems":[{"itemSeq":"000010","stoNum":"5102697601","stoLineNum":"10","ean":"8904111814063","mrp":"213","matNum":"600046399","itemDesc":"MACHO INTRO LONG TRUNK FCD 1PC-100","matGrp":"6GNMUGBRF","catInd":"K","stLoc":"3000","batch":"NB40080213","proposedDlvQty":"20","caselot":"20","uom":"EA","itemWt":"10.175","uomWt":"KG","itemVol":"10.022","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000020","stoNum":"5102697601","stoLineNum":"20","ean":"1001253105","mrp":"93","matNum":"600050259","itemDesc":"SHORTS INF BOY CNS 3-24M@79[AQJ]","matGrp":"6GKKNBKBW","catInd":"J","stLoc":"3000","batch":"RB40050093","proposedDlvQty":"54","caselot":"54","uom":"EA","itemWt":"79.085","uomWt":"KG","itemVol":"120.014","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000030","stoNum":"5102697601","stoLineNum":"30","ean":"1002939428","mrp":"529","matNum":"600054070","itemDesc":"JEANS MENS DONVIESEL34 @449[SRG]","matGrp":"6GNMCWJTR","catInd":"K","stLoc":"3000","batch":"NB40060529","proposedDlvQty":"12","caselot":"12","uom":"EA","itemWt":"45.617","uomWt":"KG","itemVol":"155.079","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000040","stoNum":"5102697601","stoLineNum":"40","ean":"1002927159","mrp":"629","matNum":"600054123","itemDesc":"CARGO BOYS SLD W/BLT 8-14Y@499[MBG]","matGrp":"6GKKBCWPT","catInd":"J","stLoc":"3000","batch":"DL30080629","proposedDlvQty":"24","caselot":"24","uom":"EA","itemWt":"300.417","uomWt":"KG","itemVol":"500.073","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000050","stoNum":"5102697601","stoLineNum":"50","ean":"1002913862","mrp":"93","matNum":"600055918","itemDesc":"LEGGING INF AOP KN 3-24 M@79[TB]","matGrp":"6GKKNBKBW","catInd":"J","stLoc":"3000","batch":"PB40080093","proposedDlvQty":"120","caselot":"120","uom":"EA","itemWt":"245.043","uomWt":"KG","itemVol":"300.008","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000060","stoNum":"5102697601","stoLineNum":"60","ean":"1002949670","mrp":"129","matNum":"600060043","itemDesc":"SOCKS M NF FULL LENGTH 3P@99[VIC]","matGrp":"6GNMACSCK","catInd":"K","stLoc":"3000","batch":"SA40100129","proposedDlvQty":"60","caselot":"60","uom":"EA","itemWt":"0.133","uomWt":"KG","itemVol":"0.03","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000070","stoNum":"5102697601","stoLineNum":"70","ean":"8904111818344","mrp":"252","matNum":"600061163","itemDesc":"MACHO BRIEF C-OPEN- 2PCS-85","matGrp":"6GNMUGBRF","catInd":"K","stLoc":"3000","batch":"AB40050252","proposedDlvQty":"20","caselot":"20","uom":"EA","itemWt":"0.175","uomWt":"KG","itemVol":"0.03","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000080","stoNum":"5102697601","stoLineNum":"80","ean":"8907965060631","mrp":"255","matNum":"600061623","itemDesc":"VIP FRENCHIE PLUS BRF 100 2PC","matGrp":"6GNMUGBRF","catInd":"K","stLoc":"3000","batch":"QL30140255","proposedDlvQty":"18","caselot":"18","uom":"EA","itemWt":"0.139","uomWt":"KG","itemVol":"0.03","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000090","stoNum":"5102697601","stoLineNum":"90","ean":"8907965067357","mrp":"312","matNum":"600061628","itemDesc":"VIP BONUS PREMIUM VEST RN 100 2PC","matGrp":"6GNMUGVES","catInd":"K","stLoc":"3000","batch":"QL30160312","proposedDlvQty":"20","caselot":"20","uom":"EA","itemWt":"0.215","uomWt":"KG","itemVol":"0.031","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000100","stoNum":"5102697601","stoLineNum":"100","ean":"1002654741","mrp":"319","matNum":"600063629","itemDesc":"SHORTS MENS HOSIERY L-XXL@249[KRW]","matGrp":"6GNMNWSHT","catInd":"K","stLoc":"3000","batch":"PB40060319","proposedDlvQty":"60","caselot":"60","uom":"EA","itemWt":"0.233","uomWt":"KG","itemVol":"0.035","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000110","stoNum":"5102697601","stoLineNum":"110","ean":"1002915040","mrp":"629","matNum":"600065384","itemDesc":"CARGO BOYS SP W/BELT 10-16Y@499[LG]","matGrp":"6GKKBCWPT","catInd":"J","stLoc":"3000","batch":"3A40060629","proposedDlvQty":"30","caselot":"30","uom":"EA","itemWt":"0.333","uomWt":"KG","itemVol":"0.059","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000120","stoNum":"5102697601","stoLineNum":"120","ean":"1002926800","mrp":"229","matNum":"600066758","itemDesc":"HANKY MEN DH HEM W/B 6P@179[FNF]","matGrp":"6GNMACHNK","catInd":"K","stLoc":"3000","batch":"VA40080229","proposedDlvQty":"70","caselot":"70","uom":"EA","itemWt":"0.114","uomWt":"KG","itemVol":"0.022","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000130","stoNum":"5102697601","stoLineNum":"130","ean":"1002617272","mrp":"409","matNum":"600067024","itemDesc":"TROUSER MEN FORMAL PV 38@349[PPI]","matGrp":"6GNMFWPLL","catInd":"K","stLoc":"3000","batch":"1B40050409","proposedDlvQty":"10","caselot":"10","uom":"EA","itemWt":"0.423","uomWt":"KG","itemVol":"0.047","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000140","stoNum":"5102697601","stoLineNum":"140","ean":"1002938902","mrp":"409","matNum":"600070242","itemDesc":"JEANS MENS POLY STRCH 34@349[ASHA]","matGrp":"6GNMCWJTR","catInd":"K","stLoc":"3000","batch":"HB40070409","proposedDlvQty":"12","caselot":"12","uom":"EA","itemWt":"0.55","uomWt":"KG","itemVol":"0.092","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000150","stoNum":"5102697601","stoLineNum":"150","ean":"1002882946","mrp":"409","matNum":"600070353","itemDesc":"JEANS BOY VAL STRECH 3-9Y@349[ASH]","matGrp":"6GKKBCDJN","catInd":"J","stLoc":"3000","batch":"HB40070409","proposedDlvQty":"40","caselot":"40","uom":"EA","itemWt":"0.313","uomWt":"KG","itemVol":"0.038","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000160","stoNum":"5102697601","stoLineNum":"160","ean":"1002904136","mrp":"229","matNum":"600071361","itemDesc":"SHORTS MEN TRICOT NF L-XXL@179[RKG","matGrp":"6GNMSWSSH","catInd":"K","stLoc":"3000","batch":"FB40080229","proposedDlvQty":"60","caselot":"60","uom":"EA","itemWt":"0.217","uomWt":"KG","itemVol":"0.035","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000170","stoNum":"5102697601","stoLineNum":"170","ean":"1001574842","mrp":"109","matNum":"600073344","itemDesc":"TOP INF FRNOPNPRN HS KN3-24M@79[FT","matGrp":"6GKKNBKTW","catInd":"J","stLoc":"3000","batch":"JB40010109","proposedDlvQty":"126","caselot":"126","uom":"EA","itemWt":"0.052","uomWt":"KG","itemVol":"0.009","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000180","stoNum":"5102697601","stoLineNum":"180","ean":"1003322328","mrp":"179","matNum":"600073421","itemDesc":"SHORTS MEN PL RISENIT M-XXL@149[AF]","matGrp":"6GNMSWSSH","catInd":"K","stLoc":"3000","batch":"SB40070179","proposedDlvQty":"48","caselot":"48","uom":"EA","itemWt":"0.18","uomWt":"KG","itemVol":"0.03","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000190","stoNum":"5102697601","stoLineNum":"190","ean":"1002902903","mrp":"229","matNum":"600073557","itemDesc":"SHIRT MEN FRM PLAIN FS 42 @199[RTF]","matGrp":"6GNMFWSFS","catInd":"K","stLoc":"3000","batch":"GA40070229","proposedDlvQty":"20","caselot":"20","uom":"EA","itemWt":"0.335","uomWt":"KG","itemVol":"0.132","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000200","stoNum":"5102697601","stoLineNum":"200","ean":"1002902781","mrp":"229","matNum":"600073559","itemDesc":"SHIRT MEN FRM PLAIN FS 38 @199[RTF]","matGrp":"6GNMFWSFS","catInd":"K","stLoc":"3000","batch":"BB40060229","proposedDlvQty":"20","caselot":"20","uom":"EA","itemWt":"0.335","uomWt":"KG","itemVol":"0.132","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000210","stoNum":"5102697601","stoLineNum":"210","ean":"1002882953","mrp":"229","matNum":"600073680","itemDesc":"JEANS BOY BASIC VAL 3-9Y@199[ASH]","matGrp":"6GKKBCDJN","catInd":"J","stLoc":"3000","batch":"AB40090229","proposedDlvQty":"40","caselot":"40","uom":"EA","itemWt":"0.288","uomWt":"KG","itemVol":"0.037","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000220","stoNum":"5102697601","stoLineNum":"220","ean":"1002641413","mrp":"49","matNum":"600073917","itemDesc":"SHORTS INF BY SOLID KN 3-24M@39[EA]","matGrp":"6GKKNBKBW","catInd":"J","stLoc":"3000","batch":"4C40050049","proposedDlvQty":"120","caselot":"120","uom":"EA","itemWt":"0.042","uomWt":"KG","itemVol":"0.007","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000230","stoNum":"5102697601","stoLineNum":"230","ean":"1001617587","mrp":"109","matNum":"600074997","itemDesc":"TSHIRT GIRL BSCGRPRT HSKN2-7Y@79[LL","matGrp":"6GKKGCKHT","catInd":"J","stLoc":"3000","batch":"KB40010109","proposedDlvQty":"120","caselot":"120","uom":"EA","itemWt":"0.042","uomWt":"KG","itemVol":"0.01","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000240","stoNum":"5102697601","stoLineNum":"240","ean":"1001637653","mrp":"185","matNum":"600075536","itemDesc":"NO FUSS RN VEST 90 2PC[SSM]","matGrp":"6GNMUGVES","catInd":"K","stLoc":"3000","batch":"SB40010185","proposedDlvQty":"25","caselot":"25","uom":"EA","itemWt":"0.184","uomWt":"KG","itemVol":"0.045","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000250","stoNum":"5102697601","stoLineNum":"250","ean":"1002656882","mrp":"439","matNum":"600075677","itemDesc":"SHORTS MENS HOSIERY M-3XL@349[KFL]","matGrp":"6GNMNWSHT","catInd":"K","stLoc":"3000","batch":"GB40070439","proposedDlvQty":"48","caselot":"48","uom":"EA","itemWt":"0.24","uomWt":"KG","itemVol":"0.044","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000260","stoNum":"5102697601","stoLineNum":"260","ean":"1001645467","mrp":"169","matNum":"600075792","itemDesc":"TRACKPANT INF BY BTRIB 3-24M@129[ME","matGrp":"6GKKNBKBW","catInd":"J","stLoc":"3000","batch":"4C40010169","proposedDlvQty":"54","caselot":"54","uom":"EA","itemWt":"0.083","uomWt":"KG","itemVol":"0.019","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000270","stoNum":"5102697601","stoLineNum":"270","ean":"1001650188","mrp":"93","matNum":"600075967","itemDesc":"TSHIRT INF BY BSCPRT HS 3-24M@79[MZ","matGrp":"6GKKNBKTW","catInd":"J","stLoc":"3000","batch":"TB40010093","proposedDlvQty":"90","caselot":"90","uom":"EA","itemWt":"0.061","uomWt":"KG","itemVol":"0.014","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000280","stoNum":"5102697601","stoLineNum":"280","ean":"1002406951","mrp":"229","matNum":"600077480","itemDesc":"TSHRT BOY PQ POLO VADLHS2-7@199[SRN","matGrp":"6GKKBCKHT","catInd":"J","stLoc":"3000","batch":"LB40060229","proposedDlvQty":"24","caselot":"24","uom":"EA","itemWt":"0.125","uomWt":"KG","itemVol":"0.025","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000290","stoNum":"5102697601","stoLineNum":"290","ean":"1002949663","mrp":"129","matNum":"600077734","itemDesc":"SOCKS L NF ASSORT ANKLE 3P@99[VIC]","matGrp":"6GWWACSCK","catInd":"L","stLoc":"3000","batch":"3C40080129","proposedDlvQty":"80","caselot":"80","uom":"EA","itemWt":"0.1","uomWt":"KG","itemVol":"0.002","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000300","stoNum":"5102697601","stoLineNum":"300","ean":"1002934201","mrp":"70","matNum":"600079556","itemDesc":"PANTIE LAD INNER ELAS 85 1P@49[RNC]","matGrp":"6GWWUGPAN","catInd":"L","stLoc":"3000","batch":"FL30090070","proposedDlvQty":"60","caselot":"60","uom":"EA","itemWt":"0.033","uomWt":"KG","itemVol":"0.006","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000310","stoNum":"5102697601","stoLineNum":"310","ean":"1002951727","mrp":"129","matNum":"600079776","itemDesc":"SOCKS L NF THERMAL FLTOE 3P@99[BKI]","matGrp":"6GWWACSCK","catInd":"L","stLoc":"3000","batch":"KA40060129","proposedDlvQty":"40","caselot":"40","uom":"EA","itemWt":"0.105","uomWt":"KG","itemVol":"0.017","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000320","stoNum":"5102697601","stoLineNum":"320","ean":"1002642922","mrp":"149","matNum":"600079932","itemDesc":"TSHIRT INF BY 3DAPQ HS3-24M@129[ARH","matGrp":"6GKKNBKTW","catInd":"J","stLoc":"3000","batch":"5C40050149","proposedDlvQty":"72","caselot":"72","uom":"EA","itemWt":"0.068","uomWt":"KG","itemVol":"0.011","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000330","stoNum":"5102697601","stoLineNum":"330","ean":"1002659340","mrp":"439","matNum":"600080252","itemDesc":"SHORT MENS LOPKNITCNS M-XXL@349[AF]","matGrp":"6GNMNWSHT","catInd":"K","stLoc":"3000","batch":"DB40050439","proposedDlvQty":"36","caselot":"36","uom":"EA","itemWt":"0.256","uomWt":"KG","itemVol":"0.039","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000340","stoNum":"5102697601","stoLineNum":"340","ean":"1002465033","mrp":"69","matNum":"600080740","itemDesc":"B&G BRIEF BOY OUTELST 4-12Y@49[SSM]","matGrp":"6GKKUGBRF","catInd":"J","stLoc":"3000","batch":"VA40060069","proposedDlvQty":"72","caselot":"72","uom":"EA","itemWt":"0.035","uomWt":"KG","itemVol":"0.014","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000350","stoNum":"5102697601","stoLineNum":"350","ean":"1001827436","mrp":"93","matNum":"600081116","itemDesc":"TSHIRT GIRL BSCPRNT HSKN2-7Y@79[BSK","matGrp":"6GKKGCKHT","catInd":"J","stLoc":"3000","batch":"JB40010093","proposedDlvQty":"72","caselot":"72","uom":"EA","itemWt":"0.11","uomWt":"KG","itemVol":"0.041","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000360","stoNum":"5102697601","stoLineNum":"360","ean":"1001833338","mrp":"119","matNum":"600081292","itemDesc":"TSHIRT BOY BSC GPC PT 8-14Y@99[EA]","matGrp":"6GKKBCKHT","catInd":"J","stLoc":"3000","batch":"4C40010119","proposedDlvQty":"72","caselot":"72","uom":"EA","itemWt":"0.125","uomWt":"KG","itemVol":"0.017","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000370","stoNum":"5102697601","stoLineNum":"370","ean":"1001833376","mrp":"93","matNum":"600081294","itemDesc":"TSHIRT BOY BSC GPC PRT 3-24M@79[EA]","matGrp":"6GKKNBKTW","catInd":"J","stLoc":"3000","batch":"4C40010093","proposedDlvQty":"108","caselot":"108","uom":"EA","itemWt":"0.052","uomWt":"KG","itemVol":"0.009","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000380","stoNum":"5102697601","stoLineNum":"380","ean":"1002937172","mrp":"129","matNum":"600081445","itemDesc":"SOCKS L NF ASSORT LOAFER 3P@99[AOV]","matGrp":"6GWWACSCK","catInd":"L","stLoc":"3000","batch":"BA40070129","proposedDlvQty":"90","caselot":"90","uom":"EA","itemWt":"0.099","uomWt":"KG","itemVol":"0.018","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000390","stoNum":"5102697601","stoLineNum":"390","ean":"1001839415","mrp":"93","matNum":"600081518","itemDesc":"TSHIRT BOY BSC GRPC SL 2-7Y@79[SRN]","matGrp":"6GKKBCKIT","catInd":"J","stLoc":"3000","batch":"4C40010093","proposedDlvQty":"144","caselot":"72","uom":"EA","itemWt":"0.086","uomWt":"KG","itemVol":"0.03","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000400","stoNum":"5102697601","stoLineNum":"400","ean":"1002411382","mrp":"109","matNum":"600081918","itemDesc":"MINIONS SHORT BOXERKD KN2-7@79 [AS]","matGrp":"6GKKBCKST","catInd":"J","stLoc":"3000","batch":"MB40070109","proposedDlvQty":"72","caselot":"72","uom":"EA","itemWt":"0.063","uomWt":"KG","itemVol":"0.008","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000410","stoNum":"5102697601","stoLineNum":"410","ean":"1001861058","mrp":"139","matNum":"600082216","itemDesc":"BRIEF MINI TRUNK NO FUSS M@109[EX]","matGrp":"6GNMUGBRF","catInd":"K","stLoc":"3000","batch":"AB40010139","proposedDlvQty":"30","caselot":"30","uom":"EA","itemWt":"0.053","uomWt":"KG","itemVol":"0.018","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000420","stoNum":"5102697601","stoLineNum":"420","ean":"1002937349","mrp":"129","matNum":"600082305","itemDesc":"SOCKS M NF ASORT SNEAKER 3P@99[SLI]","matGrp":"6GNMACSCK","catInd":"K","stLoc":"3000","batch":"LB40060129","proposedDlvQty":"60","caselot":"60","uom":"EA","itemWt":"0.092","uomWt":"KG","itemVol":"0.023","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000430","stoNum":"5102697601","stoLineNum":"430","ean":"1002926589","mrp":"319","matNum":"600082730","itemDesc":"NW LAD LNGPOLO2PKT M-2XL@249[AG]","matGrp":"6GWWNWKNG","catInd":"L","stLoc":"3000","batch":"1C40070319","proposedDlvQty":"36","caselot":"36","uom":"EA","itemWt":"0.25","uomWt":"KG","itemVol":"0.04","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000440","stoNum":"5102697601","stoLineNum":"440","ean":"1002659388","mrp":"229","matNum":"600082944","itemDesc":"SHORT M COT Y/D CHECK M-XXL@179[SHP","matGrp":"6GNMNWSHT","catInd":"K","stLoc":"3000","batch":"PB40060229","proposedDlvQty":"60","caselot":"60","uom":"EA","itemWt":"0.117","uomWt":"KG","itemVol":"0.019","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000450","stoNum":"5102697601","stoLineNum":"450","ean":"1002659395","mrp":"229","matNum":"600083079","itemDesc":"BOXER SHORTS MEN PRT M-2XL@179[SHP]","matGrp":"6GNMNWSHT","catInd":"K","stLoc":"3000","batch":"SB40050229","proposedDlvQty":"60","caselot":"60","uom":"EA","itemWt":"0.108","uomWt":"KG","itemVol":"0.019","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000460","stoNum":"5102697601","stoLineNum":"460","ean":"8907965060327","mrp":"250","matNum":"600083127","itemDesc":"VIP FRENCHIE PRO BRIEF 90 2PC","matGrp":"6GNMUGBRF","catInd":"K","stLoc":"3000","batch":"DB40110250","proposedDlvQty":"20","caselot":"20","uom":"EA","itemWt":"0.15","uomWt":"KG","itemVol":"0.032","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000470","stoNum":"5102697601","stoLineNum":"470","ean":"8903978450582","mrp":"204","matNum":"600083573","itemDesc":"RUPA FRONTLINE DRWTRUNK-95CM-1P[RC]","matGrp":"6GNMUGBRF","catInd":"K","stLoc":"3000","batch":"KA40020204","proposedDlvQty":"20","caselot":"20","uom":"EA","itemWt":"0.15","uomWt":"KG","itemVol":"0.027","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000480","stoNum":"5102697601","stoLineNum":"480","ean":"8903978454061","mrp":"270","matNum":"600083685","itemDesc":"RUPA FRONTLINE VEST RN 90CM 2PC[RC]","matGrp":"6GNMUGVES","catInd":"K","stLoc":"3000","batch":"JB40020270","proposedDlvQty":"20","caselot":"20","uom":"EA","itemWt":"0.245","uomWt":"KG","itemVol":"0.033","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000490","stoNum":"5102697601","stoLineNum":"490","ean":"8903978450131","mrp":"187","matNum":"600083687","itemDesc":"RUPA FRONTLINE VEST RNS 95-1PC[RC]","matGrp":"6GNMUGVES","catInd":"K","stLoc":"3000","batch":"CB40020187","proposedDlvQty":"20","caselot":"20","uom":"EA","itemWt":"0.166","uomWt":"KG","itemVol":"0.026","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000500","stoNum":"5102697601","stoLineNum":"500","ean":"8903978454054","mrp":"270","matNum":"600083690","itemDesc":"RUPA FRONTLINE VEST RN 85CM 2PC[RC]","matGrp":"6GNMUGVES","catInd":"K","stLoc":"3000","batch":"JB40020270","proposedDlvQty":"20","caselot":"20","uom":"EA","itemWt":"0.195","uomWt":"KG","itemVol":"0.04","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000510","stoNum":"5102697601","stoLineNum":"510","ean":"8903978450490","mrp":"144","matNum":"600083698","itemDesc":"RUPA MACRO MINI DRW TRUNK 1P 90[RC]","matGrp":"6GNMUGBRF","catInd":"K","stLoc":"3000","batch":"LA40030144","proposedDlvQty":"20","caselot":"20","uom":"EA","itemWt":"0.115","uomWt":"KG","itemVol":"0.02","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000520","stoNum":"5102697601","stoLineNum":"520","ean":"8903978452234","mrp":"202","matNum":"600083699","itemDesc":"RUPA HUNK GYM VEST 7011-90-1P[RC]","matGrp":"6GNMUGVES","catInd":"K","stLoc":"3000","batch":"CB40020202","proposedDlvQty":"20","caselot":"20","uom":"EA","itemWt":"0.15","uomWt":"KG","itemVol":"0.024","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000530","stoNum":"5102697601","stoLineNum":"530","ean":"8903978456942","mrp":"286","matNum":"600083705","itemDesc":"RUPA FRTLNE XING VST RN 90CM 2P[RC]","matGrp":"6GNMUGVES","catInd":"K","stLoc":"3000","batch":"JB40020286","proposedDlvQty":"20","caselot":"20","uom":"EA","itemWt":"0.2","uomWt":"KG","itemVol":"0.03","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000540","stoNum":"5102697601","stoLineNum":"540","ean":"1002664542","mrp":"379","matNum":"600084038","itemDesc":"TRACK PANT MN SU POLY L-2XL@299[TFI","matGrp":"6GNMSWSTP","catInd":"K","stLoc":"3000","batch":"8B40060379","proposedDlvQty":"27","caselot":"27","uom":"EA","itemWt":"0.443","uomWt":"KG","itemVol":"0.089","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000550","stoNum":"5102697601","stoLineNum":"550","ean":"1001935414","mrp":"185","matNum":"600084354","itemDesc":"NO FUSS RN VEST 95 2PC[LUX]","matGrp":"6GNMUGVES","catInd":"K","stLoc":"3000","batch":"PA40010185","proposedDlvQty":"30","caselot":"30","uom":"EA","itemWt":"0.204","uomWt":"KG","itemVol":"0.02","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000560","stoNum":"5102697601","stoLineNum":"560","ean":"1002929603","mrp":"189","matNum":"600084385","itemDesc":"SOCKS M NFCW SPORTANKLE 3P@149[NHZ]","matGrp":"6GNMACSCK","catInd":"K","stLoc":"3000","batch":"FB40080189","proposedDlvQty":"30","caselot":"30","uom":"EA","itemWt":"0.183","uomWt":"KG","itemVol":"0.042","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000570","stoNum":"5102697601","stoLineNum":"570","ean":"8902889472140","mrp":"194","matNum":"600085990","itemDesc":"DOLLAR BB INTL SCD TRUNK 95 1P[DIL","matGrp":"6GNMUGBRF","catInd":"K","stLoc":"3000","batch":"PB40050194","proposedDlvQty":"20","caselot":"20","uom":"EA","itemWt":"0.183","uomWt":"KG","itemVol":"0.037","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000580","stoNum":"5102697601","stoLineNum":"580","ean":"8902889472188","mrp":"150","matNum":"600086062","itemDesc":"DOLLAR BIGBOS MINI TRUNK-90 1P[DIL","matGrp":"6GNMUGBRF","catInd":"K","stLoc":"3000","batch":"OB40060150","proposedDlvQty":"20","caselot":"20","uom":"EA","itemWt":"0.115","uomWt":"KG","itemVol":"0.025","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000590","stoNum":"5102697601","stoLineNum":"590","ean":"1001989653","mrp":"109","matNum":"600086281","itemDesc":"TSHIRT BOY BSC GRPC HS 2-7Y@79[SMS]","matGrp":"6GKKBCKHT","catInd":"J","stLoc":"3000","batch":"UA40010109","proposedDlvQty":"144","caselot":"72","uom":"EA","itemWt":"0.083","uomWt":"KG","itemVol":"0.016","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000600","stoNum":"5102697601","stoLineNum":"600","ean":"1003209377","mrp":"189","matNum":"600086776","itemDesc":"TSHIRT MN PL WRNGLWPR M-2XL@149[SKL","matGrp":"6GNMSWSTS","catInd":"K","stLoc":"3000","batch":"7B40050189","proposedDlvQty":"48","caselot":"48","uom":"EA","itemWt":"0.152","uomWt":"KG","itemVol":"0.017","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000610","stoNum":"5102697601","stoLineNum":"610","ean":"1002659487","mrp":"169","matNum":"600086778","itemDesc":"BOXER SHORT MN Y/D CH M-XXL@129[SHP","matGrp":"6GNMNWSHT","catInd":"K","stLoc":"3000","batch":"SB40060169","proposedDlvQty":"57","caselot":"57","uom":"EA","itemWt":"0.093","uomWt":"KG","itemVol":"0.016","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000620","stoNum":"5102697601","stoLineNum":"620","ean":"1002654826","mrp":"439","matNum":"600087190","itemDesc":"SHORT MN HOSIERY NF 3XL-4XL@349[RKG","matGrp":"6GNMNWSHT","catInd":"K","stLoc":"3000","batch":"AL30060439","proposedDlvQty":"36","caselot":"36","uom":"EA","itemWt":"0.028","uomWt":"KG","itemVol":"0.057","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000630","stoNum":"5102697601","stoLineNum":"630","ean":"1002035755","mrp":"119","matNum":"600087691","itemDesc":"SHORTS MEN POLY CNS SM-LXL@99[AC]","matGrp":"6GNMSWSSH","catInd":"K","stLoc":"3000","batch":"4C40010119","proposedDlvQty":"72","caselot":"72","uom":"EA","itemWt":"0.139","uomWt":"KG","itemVol":"0.028","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000640","stoNum":"5102697601","stoLineNum":"640","ean":"8904111814742","mrp":"186","matNum":"600087758","itemDesc":"MACHO PRINTED MINI TRUNK 90 1PC","matGrp":"6GNMUGBRF","catInd":"K","stLoc":"3000","batch":"BB40020186","proposedDlvQty":"40","caselot":"20","uom":"EA","itemWt":"0.27","uomWt":"KG","itemVol":"0.137","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000650","stoNum":"5102697601","stoLineNum":"650","ean":"1002902446","mrp":"119","matNum":"600087906","itemDesc":"T-SHIRT MEN PLSL GRIND M-XL@99[KFL","matGrp":"6GNMSWSTL","catInd":"K","stLoc":"3000","batch":"3C40050119","proposedDlvQty":"72","caselot":"72","uom":"EA","itemWt":"0.118","uomWt":"KG","itemVol":"0.018","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000660","stoNum":"5102697601","stoLineNum":"660","ean":"1002043378","mrp":"129","matNum":"600087925","itemDesc":"TSHIRT GIRL BSCPRNT HS8-14Y@99[SMS","matGrp":"6GKKGCKHT","catInd":"J","stLoc":"3000","batch":"GB40010129","proposedDlvQty":"72","caselot":"72","uom":"EA","itemWt":"0.104","uomWt":"KG","itemVol":"0.015","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000670","stoNum":"5102697601","stoLineNum":"670","ean":"1002651634","mrp":"149","matNum":"600088149","itemDesc":"HANKY MEN NOFUSS HEM DC 6P@129[GTM]","matGrp":"6GNMACHNK","catInd":"K","stLoc":"3000","batch":"5C40040149","proposedDlvQty":"70","caselot":"70","uom":"EA","itemWt":"0.154","uomWt":"KG","itemVol":"0.021","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000680","stoNum":"5102697601","stoLineNum":"680","ean":"1002711178","mrp":"189","matNum":"600089006","itemDesc":"FROCK INF GIRL BSC/EMB0-24M@149[SK]","matGrp":"6GKKNBWTW","catInd":"J","stLoc":"3000","batch":"NB40050189","proposedDlvQty":"48","caselot":"48","uom":"EA","itemWt":"0.067","uomWt":"KG","itemVol":"0.015","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000690","stoNum":"5102697601","stoLineNum":"690","ean":"1002651795","mrp":"149","matNum":"600089089","itemDesc":"HANKY MEN NOFUSS HEM MIX 6P@129[NS]","matGrp":"6GNMACHNK","catInd":"K","stLoc":"3000","batch":"3B40060149","proposedDlvQty":"70","caselot":"70","uom":"EA","itemWt":"0.123","uomWt":"KG","itemVol":"0.023","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000700","stoNum":"5102697601","stoLineNum":"700","ean":"1002939565","mrp":"569","matNum":"600089484","itemDesc":"JEANS MENS DE 36@449[KAB]","matGrp":"6GNMCWJTR","catInd":"K","stLoc":"3000","batch":"AA40050569","proposedDlvQty":"12","caselot":"12","uom":"EA","itemWt":"0.5","uomWt":"KG","itemVol":"0.077","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000710","stoNum":"5102697601","stoLineNum":"710","ean":"1002401314","mrp":"129","matNum":"600089500","itemDesc":"SHORT BOY AOP KN 8-14YRS@99[SMS]","matGrp":"6GKKBCKST","catInd":"J","stLoc":"3000","batch":"NB40040129","proposedDlvQty":"72","caselot":"72","uom":"EA","itemWt":"0.097","uomWt":"KG","itemVol":"0.016","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000720","stoNum":"5102697601","stoLineNum":"720","ean":"1002939275","mrp":"409","matNum":"600089581","itemDesc":"JEANS MENS BASIC 36@349[SRG]","matGrp":"6GNMCWJTR","catInd":"K","stLoc":"3000","batch":"2C40070409","proposedDlvQty":"12","caselot":"12","uom":"EA","itemWt":"0.608","uomWt":"KG","itemVol":"0.087","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000730","stoNum":"5102697601","stoLineNum":"730","ean":"1002108770","mrp":"109","matNum":"600089908","itemDesc":"SLIP GIRL BSCHSTPRT SLKN2-7Y@79[UT","matGrp":"6GKKUGSLP","catInd":"J","stLoc":"3000","batch":"1C40010109","proposedDlvQty":"72","caselot":"72","uom":"EA","itemWt":"0.072","uomWt":"KG","itemVol":"0.01","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000740","stoNum":"5102697601","stoLineNum":"740","ean":"1002172856","mrp":"189","matNum":"600091899","itemDesc":"SHORTS MENS INDIGO M-XXL@149[SHP]","matGrp":"6GNMNWSHT","catInd":"K","stLoc":"3000","batch":"PB40010189","proposedDlvQty":"48","caselot":"48","uom":"EA","itemWt":"0.158","uomWt":"KG","itemVol":"0.023","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000750","stoNum":"5102697601","stoLineNum":"750","ean":"1002673377","mrp":"249","matNum":"600092094","itemDesc":"T-SHIRT MN PL RNHS AOP S-XL@199[AC]","matGrp":"6GNMSWSTS","catInd":"K","stLoc":"3000","batch":"IB40050249","proposedDlvQty":"36","caselot":"36","uom":"EA","itemWt":"0.222","uomWt":"KG","itemVol":"0.023","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000760","stoNum":"5102697601","stoLineNum":"760","ean":"1002966943","mrp":"159","matNum":"600092778","itemDesc":"MINI TRUNK M AOP PRT M-XXL@109[JNV","matGrp":"6GNMUGBRF","catInd":"K","stLoc":"3000","batch":"1C40060159","proposedDlvQty":"48","caselot":"48","uom":"EA","itemWt":"0.146","uomWt":"KG","itemVol":"0.022","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000770","stoNum":"5102697601","stoLineNum":"770","ean":"8907965069566","mrp":"125","matNum":"600093014","itemDesc":"VIP MENS BRIEF FRESH AIR FLO 90 1PC","matGrp":"6GNMUGBRF","catInd":"K","stLoc":"3000","batch":"DB40060125","proposedDlvQty":"20","caselot":"20","uom":"EA","itemWt":"0.05","uomWt":"KG","itemVol":"0.027","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000780","stoNum":"5102697601","stoLineNum":"780","ean":"8907965069610","mrp":"145","matNum":"600093015","itemDesc":"VIP MENS FULL TRUNK FRESH 85 1P","matGrp":"6GNMUGBRF","catInd":"K","stLoc":"3000","batch":"DB40070145","proposedDlvQty":"20","caselot":"20","uom":"EA","itemWt":"0.1","uomWt":"KG","itemVol":"0.024","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000790","stoNum":"5102697601","stoLineNum":"790","ean":"1002648436","mrp":"319","matNum":"600093463","itemDesc":"SHORT BOY PL CAMOPRNT 8-14Y@249[SXE","matGrp":"6GKKBSPSH","catInd":"J","stLoc":"3000","batch":"JB40040319","proposedDlvQty":"48","caselot":"48","uom":"EA","itemWt":"0.113","uomWt":"KG","itemVol":"0.029","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000800","stoNum":"5102697601","stoLineNum":"800","ean":"1002319855","mrp":"119","matNum":"600094104","itemDesc":"TSHRT BOYS CHEST PRT HS8-14Y@99[ME","matGrp":"6GKKBCKHT","catInd":"J","stLoc":"3000","batch":"IB40010119","proposedDlvQty":"72","caselot":"72","uom":"EA","itemWt":"0.117","uomWt":"KG","itemVol":"0.016","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000810","stoNum":"5102697601","stoLineNum":"810","ean":"8902889472324","mrp":"150","matNum":"600094154","itemDesc":"DOLLAR BB BOXER TRUNK IE 90 1P[DIL","matGrp":"6GNMUGBRF","catInd":"K","stLoc":"3000","batch":"OB40040150","proposedDlvQty":"20","caselot":"20","uom":"EA","itemWt":"0.12","uomWt":"KG","itemVol":"0.027","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000820","stoNum":"5102697601","stoLineNum":"820","ean":"1002645480","mrp":"699","matNum":"600094371","itemDesc":"TRACKPT MHO TWILLYCRA M-2XL@599[BKW","matGrp":"6GNMNWTPT","catInd":"K","stLoc":"3000","batch":"3C40040699","proposedDlvQty":"72","caselot":"36","uom":"EA","itemWt":"0.389","uomWt":"KG","itemVol":"0.073","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000830","stoNum":"5102697601","stoLineNum":"830","ean":"1002635269","mrp":"229","matNum":"600094401","itemDesc":"TRACKPANT BOY WRIB PRT8-14@179[SMS","matGrp":"6GKKBCKTP","catInd":"J","stLoc":"3000","batch":"UA40060229","proposedDlvQty":"48","caselot":"48","uom":"EA","itemWt":"0.198","uomWt":"KG","itemVol":"0.026","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000840","stoNum":"5102697601","stoLineNum":"840","ean":"1002643929","mrp":"49","matNum":"600094420","itemDesc":"SHORT INF BY SLD STRP KN3-24M@39[UT","matGrp":"6GKKNBKBW","catInd":"J","stLoc":"3000","batch":"EB40040049","proposedDlvQty":"180","caselot":"180","uom":"EA","itemWt":"0.044","uomWt":"KG","itemVol":"0.011","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000850","stoNum":"5102697601","stoLineNum":"850","ean":"1002923816","mrp":"129","matNum":"600094465","itemDesc":"TSHIRT BOY PL PRINT HS 8-14Y@99[SKL","matGrp":"6GKKBSPTS","catInd":"J","stLoc":"3000","batch":"DB40050129","proposedDlvQty":"48","caselot":"48","uom":"EA","itemWt":"0.106","uomWt":"KG","itemVol":"0.013","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000860","stoNum":"5102697601","stoLineNum":"860","ean":"1002635030","mrp":"229","matNum":"600094774","itemDesc":"SHORT BOY SDSTP VALAD 8-14Y@179[SRN","matGrp":"6GKKBCKST","catInd":"J","stLoc":"3000","batch":"HK30050229","proposedDlvQty":"48","caselot":"48","uom":"EA","itemWt":"0.223","uomWt":"KG","itemVol":"0.031","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000870","stoNum":"5102697601","stoLineNum":"870","ean":"1002429677","mrp":"179","matNum":"600096129","itemDesc":"SHORTS LADIES PL SUB M-XXL@149[SSV]","matGrp":"6GWWSWSTP","catInd":"L","stLoc":"3000","batch":"RB40010179","proposedDlvQty":"48","caselot":"48","uom":"EA","itemWt":"0.144","uomWt":"KG","itemVol":"0.021","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000880","stoNum":"5102697601","stoLineNum":"880","ean":"1002634903","mrp":"229","matNum":"600096310","itemDesc":"KNEESHORT BOY SLD PRT 8-14Y@179[MPM","matGrp":"6GKKBCKST","catInd":"J","stLoc":"3000","batch":"IK30030229","proposedDlvQty":"48","caselot":"48","uom":"EA","itemWt":"0.131","uomWt":"KG","itemVol":"0.029","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000890","stoNum":"5102697601","stoLineNum":"890","ean":"1002915170","mrp":"179","matNum":"600096483","itemDesc":"SHORTS BOY POP SLD FASH 2-7Y@149[LG","matGrp":"6GKKBCWST","catInd":"J","stLoc":"3000","batch":"RB40050179","proposedDlvQty":"48","caselot":"48","uom":"EA","itemWt":"0.125","uomWt":"KG","itemVol":"0.017","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000900","stoNum":"5102697601","stoLineNum":"900","ean":"1002658473","mrp":"439","matNum":"600096689","itemDesc":"SHORTM APLCUT TERY 3XL-4XL@349[SKL]","matGrp":"6GNMNWSHT","catInd":"K","stLoc":"3000","batch":"7B40030439","proposedDlvQty":"36","caselot":"36","uom":"EA","itemWt":"0.264","uomWt":"KG","itemVol":"0.045","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000910","stoNum":"5102697601","stoLineNum":"910","ean":"1002477814","mrp":"109","matNum":"600097124","itemDesc":"TSHIRT BOY BSC GRPC HS 2-7Y@79[LL]","matGrp":"6GKKBCKHT","catInd":"J","stLoc":"3000","batch":"NB40010109","proposedDlvQty":"144","caselot":"72","uom":"EA","itemWt":"0.083","uomWt":"KG","itemVol":"0.015","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000920","stoNum":"5102697601","stoLineNum":"920","ean":"1002647064","mrp":"229","matNum":"600097745","itemDesc":"SHORT MN PCINDIGO NEW M-2XL@179[RTF","matGrp":"6GNMNWSHT","catInd":"K","stLoc":"3000","batch":"2C40030229","proposedDlvQty":"48","caselot":"48","uom":"EA","itemWt":"0.129","uomWt":"KG","itemVol":"0.023","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000930","stoNum":"5102697601","stoLineNum":"930","ean":"1002906284","mrp":"289","matNum":"600098395","itemDesc":"LEGING LD CL BLACK XL-XXL@249[ACME]","matGrp":"6GWWEWCHU","catInd":"L","stLoc":"3000","batch":"MB40050289","proposedDlvQty":"20","caselot":"20","uom":"EA","itemWt":"0.25","uomWt":"KG","itemVol":"0.052","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000940","stoNum":"5102697601","stoLineNum":"940","ean":"1002906260","mrp":"289","matNum":"600098411","itemDesc":"LEGING LD CL BEIGE XL-XXL@249[ACME]","matGrp":"6GWWEWCHU","catInd":"L","stLoc":"3000","batch":"4C40060289","proposedDlvQty":"20","caselot":"20","uom":"EA","itemWt":"0.264","uomWt":"KG","itemVol":"0.054","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000950","stoNum":"5102697601","stoLineNum":"950","ean":"1002906383","mrp":"289","matNum":"600098412","itemDesc":"LEGING LD CL WHITE XL-XXL@249[ACME]","matGrp":"6GWWEWCHU","catInd":"L","stLoc":"3000","batch":"MB40060289","proposedDlvQty":"20","caselot":"20","uom":"EA","itemWt":"0.245","uomWt":"KG","itemVol":"0.074","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000960","stoNum":"5102697601","stoLineNum":"960","ean":"1002915835","mrp":"289","matNum":"600100009","itemDesc":"FROCK GIRL INF CKN EMB0-24M@249[HB]","matGrp":"6GKKNBWTW","catInd":"J","stLoc":"3000","batch":"OB40040289","proposedDlvQty":"36","caselot":"36","uom":"EA","itemWt":"0.094","uomWt":"KG","itemVol":"0.014","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000970","stoNum":"5102697601","stoLineNum":"970","ean":"1002915248","mrp":"93","matNum":"600100080","itemDesc":"TSHIRT BOY BSC GRPC SL 2-7Y@79[SMS]","matGrp":"6GKKBCKIT","catInd":"J","stLoc":"3000","batch":"2C40040093","proposedDlvQty":"72","caselot":"72","uom":"EA","itemWt":"0.09","uomWt":"KG","itemVol":"0.011","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000980","stoNum":"5102697601","stoLineNum":"980","ean":"1003300982","mrp":"179","matNum":"600100094","itemDesc":"TSHIRT MN SL PL PRINT M-XXL@149[KFL","matGrp":"6GNMSWSTL","catInd":"K","stLoc":"3000","batch":"1C40040179","proposedDlvQty":"36","caselot":"36","uom":"EA","itemWt":"0.148","uomWt":"KG","itemVol":"0.024","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"000990","stoNum":"5102697601","stoLineNum":"990","ean":"1002923830","mrp":"129","matNum":"600100129","itemDesc":"TSHIRT BOY PL SL MESH 8-14Y@99[SKL]","matGrp":"6GKKBSPTS","catInd":"J","stLoc":"3000","batch":"TB40040129","proposedDlvQty":"48","caselot":"48","uom":"EA","itemWt":"0.088","uomWt":"KG","itemVol":"0.017","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"001000","stoNum":"5102697601","stoLineNum":"1000","ean":"1002909964","mrp":"249","matNum":"600100136","itemDesc":"TSHRT M PLY SL CNSPRNT M-XXL@199[AE","matGrp":"6GNMSWSTL","catInd":"K","stLoc":"3000","batch":"EB40050249","proposedDlvQty":"36","caselot":"36","uom":"EA","itemWt":"0.174","uomWt":"KG","itemVol":"0.031","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"001010","stoNum":"5102697601","stoLineNum":"1010","ean":"1002899531","mrp":"349","matNum":"600100284","itemDesc":"FROCK INF GIRL FNCYAOP6-12M@299[RSH","matGrp":"6GKKNBWTW","catInd":"J","stLoc":"3000","batch":"5C40040349","proposedDlvQty":"36","caselot":"36","uom":"EA","itemWt":"0.136","uomWt":"KG","itemVol":"0.037","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"001020","stoNum":"5102697601","stoLineNum":"1020","ean":"1002939602","mrp":"409","matNum":"600100299","itemDesc":"JEANS MEN NF CORE SERIES 34@349[ME]","matGrp":"6GNMCWJTR","catInd":"K","stLoc":"3000","batch":"3C40040409","proposedDlvQty":"12","caselot":"12","uom":"EA","itemWt":"0.529","uomWt":"KG","itemVol":"0.093","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"001030","stoNum":"5102697601","stoLineNum":"1030","ean":"1002930371","mrp":"189","matNum":"600100367","itemDesc":"SOCKS M NF SRT FL TERRY 3P@149[WIL]","matGrp":"6GNMACSCK","catInd":"K","stLoc":"3000","batch":"4B40050189","proposedDlvQty":"30","caselot":"30","uom":"EA","itemWt":"0.25","uomWt":"KG","itemVol":"0.051","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"001040","stoNum":"5102697601","stoLineNum":"1040","ean":"1002720217","mrp":"209","matNum":"600101331","itemDesc":"SHORTS BOY PL TAFFETA 8-15Y@179[SSV","matGrp":"6GKKBSPSH","catInd":"J","stLoc":"3000","batch":"2B40010209","proposedDlvQty":"32","caselot":"32","uom":"EA","itemWt":"0.102","uomWt":"KG","itemVol":"0.027","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"001050","stoNum":"5102697601","stoLineNum":"1050","ean":"1002720279","mrp":"289","matNum":"600101334","itemDesc":"TSHRT MN PLHS SUBCAMO M-XXL@249[SSV","matGrp":"6GNMSWSTS","catInd":"K","stLoc":"3000","batch":"2B40010289","proposedDlvQty":"36","caselot":"36","uom":"EA","itemWt":"0.167","uomWt":"KG","itemVol":"0.159","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"001060","stoNum":"5102697601","stoLineNum":"1060","ean":"1002903986","mrp":"119","matNum":"600101357","itemDesc":"SHORT GIRL AOPRYN PKTLC8-14Y@99[A-9","matGrp":"6GKKGCWST","catInd":"J","stLoc":"3000","batch":"EB40040119","proposedDlvQty":"48","caselot":"48","uom":"EA","itemWt":"0.135","uomWt":"KG","itemVol":"0.024","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"001070","stoNum":"5102697601","stoLineNum":"1070","ean":"1002903979","mrp":"93","matNum":"600101358","itemDesc":"SHORT GIRL AOP RYN LACE2-7Y@79[A-9]","matGrp":"6GKKGCWST","catInd":"J","stLoc":"3000","batch":"5C40030093","proposedDlvQty":"48","caselot":"48","uom":"EA","itemWt":"0.135","uomWt":"KG","itemVol":"0.023","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"001080","stoNum":"5102697601","stoLineNum":"1080","ean":"1002964628","mrp":"129","matNum":"600101494","itemDesc":"SOCKS M NF ASORT SNEAKER 3P@99[SSK]","matGrp":"6GNMACSCK","catInd":"K","stLoc":"3000","batch":"LA40050129","proposedDlvQty":"50","caselot":"50","uom":"EA","itemWt":"0.104","uomWt":"KG","itemVol":"0.028","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"001090","stoNum":"5102697601","stoLineNum":"1090","ean":"1002732715","mrp":"129","matNum":"600101679","itemDesc":"TSHRT MHSRN TUB PLAIN S@99PC","matGrp":"6GNMCWTHR","catInd":"K","stLoc":"3000","batch":"IB40010129","proposedDlvQty":"160","caselot":"80","uom":"EA","itemWt":"0.138","uomWt":"KG","itemVol":"0.022","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"001100","stoNum":"5102697601","stoLineNum":"1100","ean":"1002733996","mrp":"129","matNum":"600101733","itemDesc":"TSHRT MHSRN TUB PLAIN L@99PC","matGrp":"6GNMCWTHR","catInd":"K","stLoc":"3000","batch":"IB40010129","proposedDlvQty":"240","caselot":"80","uom":"EA","itemWt":"0.16","uomWt":"KG","itemVol":"0.026","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"001110","stoNum":"5102697601","stoLineNum":"1110","ean":"1002894963","mrp":"579","matNum":"600102007","itemDesc":"SHIRT M P-WR PRINT FS 42@499[HP]","matGrp":"6GNMPWSFS","catInd":"K","stLoc":"3000","batch":"4C40030579","proposedDlvQty":"20","caselot":"20","uom":"EA","itemWt":"0.406","uomWt":"KG","itemVol":"0.114","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"001120","stoNum":"5102697601","stoLineNum":"1120","ean":"8904111814254","mrp":"192","matNum":"600102035","itemDesc":"MACHO PLAIN LONG TRUNK FCD 1PC-95`","matGrp":"6GNMUGBRF","catInd":"K","stLoc":"3000","batch":"BB40020192","proposedDlvQty":"20","caselot":"20","uom":"EA","itemWt":"0.175","uomWt":"KG","itemVol":"0.025","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"001130","stoNum":"5102697601","stoLineNum":"1130","ean":"8904111814230","mrp":"172","matNum":"600102036","itemDesc":"MACHO PLAIN LONG TRUNK FCD 1PC-85","matGrp":"6GNMUGBRF","catInd":"K","stLoc":"3000","batch":"BB40020172","proposedDlvQty":"20","caselot":"20","uom":"EA","itemWt":"0.175","uomWt":"KG","itemVol":"0.028","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"001140","stoNum":"5102697601","stoLineNum":"1140","ean":"1002894970","mrp":"579","matNum":"600102098","itemDesc":"SHIRT M P-WR PRINT FS 40@499[HP]","matGrp":"6GNMPWSFS","catInd":"K","stLoc":"3000","batch":"4C40040579","proposedDlvQty":"20","caselot":"20","uom":"EA","itemWt":"0.361","uomWt":"KG","itemVol":"0.111","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"001150","stoNum":"5102697601","stoLineNum":"1150","ean":"1002749201","mrp":"129","matNum":"600102167","itemDesc":"TSHRT MHSRN NOFUSS HD M@99SRN","matGrp":"6GNMCWTHR","catInd":"K","stLoc":"3000","batch":"4C40010129","proposedDlvQty":"160","caselot":"80","uom":"EA","itemWt":"0.15","uomWt":"KG","itemVol":"0.026","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"001160","stoNum":"5102697601","stoLineNum":"1160","ean":"1002822799","mrp":"129","matNum":"600102285","itemDesc":"TSHRT MHSRN NOFUSS HD L@99SRN","matGrp":"6GNMCWTHR","catInd":"K","stLoc":"3000","batch":"4C40030129","proposedDlvQty":"240","caselot":"80","uom":"EA","itemWt":"0.163","uomWt":"KG","itemVol":"0.022","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"001170","stoNum":"5102697601","stoLineNum":"1170","ean":"1002754113","mrp":"129","matNum":"600102325","itemDesc":"TSHRT MHSRN MOTIV PRNT M@99SRN","matGrp":"6GNMCWTHR","catInd":"K","stLoc":"3000","batch":"7B40010129","proposedDlvQty":"80","caselot":"80","uom":"EA","itemWt":"0.144","uomWt":"KG","itemVol":"0.024","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"001180","stoNum":"5102697601","stoLineNum":"1180","ean":"1002885176","mrp":"229","matNum":"600102368","itemDesc":"CAPRI GIRL DNM BPKT EMB 2-7Y@199[A9","matGrp":"6GKKGCDCP","catInd":"J","stLoc":"3000","batch":"5C40030229","proposedDlvQty":"24","caselot":"24","uom":"EA","itemWt":"0.292","uomWt":"KG","itemVol":"0.048","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"001190","stoNum":"5102697601","stoLineNum":"1190","ean":"1002777037","mrp":"459","matNum":"600102647","itemDesc":"JEANS BOYS OD COLOR 8-14Y@399[SUN]","matGrp":"6GKKBCDJN","catInd":"J","stLoc":"3000","batch":"NB40010459","proposedDlvQty":"30","caselot":"30","uom":"EA","itemWt":"0.4","uomWt":"KG","itemVol":"0.057","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"},{"itemSeq":"001200","stoNum":"5102697601","stoLineNum":"1200","ean":"1002965472","mrp":"169","matNum":"600102956","itemDesc":"CAPRI LAD AOP S-XL@129[AA]","matGrp":"6GWWNWKCP","catInd":"L","stLoc":"3000","batch":"5G30040169","proposedDlvQty":"72","caselot":"72","uom":"EA","itemWt":"0.146","uomWt":"KG","itemVol":"0.022","uomVol":"FT3","pickStatus":"A","storageType":"FRS","leQty":"288"}]}); 
+  }
+  jsonTreeCreate0();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:22:16 PM</td>
+        <td>
+          Endpoint is : /pi-handler/outbound/delivery/v1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:22:26 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-1'></div>
+ <script>
+  function jsonTreeCreate1() { 
+   document.getElementById('code-block-json-1').innerHTML = JSONTree.create(Response is {
+    "timestamp": "2024-05-13T06:52:18.337+00:00",
+    "status": 500,
+    "error": "Internal Server Error",
+    "path": "/pi-handler/outbound/delivery/v1"
+}); 
+  }
+  jsonTreeCreate1();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:22:26 PM</td>
+        <td>
+          Response status code is 500
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:22:26 PM</td>
+        <td>
+          Response Time is 9602 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:22:26 PM</td>
+        <td>
+          Verify that status code be equal to 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:22:26 PM</td>
+        <td>
+          <span class='badge white-text red'>Failed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:22:26 PM</td>
+        <td>
+          Expected status code is 201 but the Actual status code is 500
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>May 13, 2024 12:22:13 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>May 13, 2024 12:22:26 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+<div>
+<small data-tooltip='4%'><b>1</b> events failed,
+<b data-tooltip='%'>24</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Create delivery for sorter using excel":12.843
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 0,
+failEvents: 1,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 24
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

@@ -1,0 +1,1504 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>PWP API Automation</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">PWP - CANARY Environment</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">May 15, 2024 12:05:22 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Create delivery for sorter using excel</p>
+            <p class="text-sm">
+              <span>12:05:22 PM</span> / <span>00:00:05:723</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Create delivery for sorter using excel</h5>
+<span class='badge badge-success'>05.15.2024 12:05:22 PM</span>
+<span class='badge badge-danger'>05.15.2024 12:05:28 PM</span>
+<span class='badge badge-default'>00:00:05:723</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:22 PM</td>
+        <td>
+          Give Username and Password to get Access Token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:22 PM</td>
+        <td>
+          Get the delivery number to create new delivery
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:22 PM</td>
+        <td>
+          Provide the proposed delivery date for a delivery
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:22 PM</td>
+        <td>
+          Give the source siteId for the delivery
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:22 PM</td>
+        <td>
+          Give the destination siteId for the delivery
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:22 PM</td>
+        <td>
+          Give the warehouse number of the source siteId
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:22 PM</td>
+        <td>
+          Give the name of a person creating a delivery
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:22 PM</td>
+        <td>
+          Get the date of creation of the delivery
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:22 PM</td>
+        <td>
+          Get the time of creation of the delivery
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:22 PM</td>
+        <td>
+          Provide the totalGdsMvtStat for the delivery
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:22 PM</td>
+        <td>
+          Give the Excel file to get the items for a delivery
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:24 PM</td>
+        <td>
+          Give the sheet name and the number of items required in a delivery
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:24 PM</td>
+        <td>
+          Requester calls the outbound delivery endpoint to create new delivery for a wave
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:25 PM</td>
+        <td>
+          Base URL is : https://canary.api.meradmart.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:25 PM</td>
+        <td>
+          Headers are - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:25 PM</td>
+        <td>
+          [Content-Type=application/json, username=integrator, password=3poXy$6o29, requestId=5001597022-1]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:25 PM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:25 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-0'></div>
+ <script>
+  function jsonTreeCreate0() { 
+   document.getElementById('code-block-json-0').innerHTML = JSONTree.create([{"dlvNumber":"9338589810","proposedDlvDate":"20240515","srcSiteId":"1014","dstSiteId":"4017","whNumber":"114","createdBy":"yash","creationDate":"20240515","creationTime":"120522","totalGdsMvtStat":"A","dlvItems":[{"itemSeq":"000010","stoNum":"5101269267","stoLineNum":"000010","ean":"8901725125172","mrp":"180.00","matNum":"200000864","itemDesc":"AASHIRVAAD CHILLI POWDER(500G)","matGrp":"2SPPWBPWC","catInd":"S","stLoc":"3000","batch":"2301210180","proposedDlvQty":"24","caselot":"12","uom":"EA","itemWt":"0.502","uomWt":"KG","itemVol":"0.057","uomVol":"FT3","pickStatus":"A","storageType":"HRS","leQty":"288"},{"itemSeq":"000020","stoNum":"5101269267","stoLineNum":"000020","ean":"8901058869187","mrp":"58.00","matNum":"200005944","itemDesc":"MAGGI MASALA MAGIC(72G)","matGrp":"2SPOSPXXX","catInd":"S","stLoc":"3000","batch":"0101210058","proposedDlvQty":"24","caselot":"12","uom":"EA","itemWt":"0.108","uomWt":"KG","itemVol":"0.029","uomVol":"FT3","pickStatus":"A","storageType":"HRS","leQty":"288"},{"itemSeq":"000030","stoNum":"5101269267","stoLineNum":"000030","ean":"8901058890341","mrp":"96.00","matNum":"200007150","itemDesc":"MAGGI MASALA MAGIC(120G)","matGrp":"2SPOSPXXX","catInd":"S","stLoc":"3000","batch":"0112200096","proposedDlvQty":"24","caselot":"12","uom":"EA","itemWt":"0.175","uomWt":"KG","itemVol":"0.003","uomVol":"FT3","pickStatus":"A","storageType":"HRS","leQty":"288"},{"itemSeq":"000040","stoNum":"5101269267","stoLineNum":"000040","ean":"4902430722001","mrp":"85.00","matNum":"300000023","itemDesc":"GILLETTE SER MOSTRZNG SHAVE GEL-60G","matGrp":"3PDDPCPBL","catInd":"Q","stLoc":"3000","batch":"0101210085","proposedDlvQty":"24","caselot":"12","uom":"EA","itemWt":"0.083","uomWt":"KG","itemVol":"0.007","uomVol":"FT3","pickStatus":"A","storageType":"HRS","leQty":"288"},{"itemSeq":"000050","stoNum":"5101269267","stoLineNum":"000050","ean":"4987176030061","mrp":"65.00","matNum":"300000025","itemDesc":"GILLETTE SHAVING BRUSH-1 PCS","matGrp":"3PDDPCPBL","catInd":"Q","stLoc":"3000","batch":"0111200065","proposedDlvQty":"24","caselot":"12","uom":"EA","itemWt":"0.065","uomWt":"KG","itemVol":"0.016","uomVol":"FT3","pickStatus":"A","storageType":"HRS","leQty":"288"}]}]); 
+  }
+  jsonTreeCreate0();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:25 PM</td>
+        <td>
+          Endpoint is : /pi-handler/outbound/delivery/v1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:28 PM</td>
+        <td>
+          Response is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:28 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-1'></div>
+ <script>
+  function jsonTreeCreate1() { 
+   document.getElementById('code-block-json-1').innerHTML = JSONTree.create(); 
+  }
+  jsonTreeCreate1();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:28 PM</td>
+        <td>
+          Response status code is 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:28 PM</td>
+        <td>
+          Response Time is 1990 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:28 PM</td>
+        <td>
+          Verify that status code be equal to 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:05:28 PM</td>
+        <td>
+          <span class='badge white-text green'>Passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:28 PM</td>
+        <td>
+          Expected Status Code is 201 and the Actual Status Code is 201
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Optimize the delivery created for a wave</p>
+            <p class="text-sm">
+              <span>12:05:28 PM</span> / <span>00:00:01:545</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Optimize the delivery created for a wave</h5>
+<span class='badge badge-success'>05.15.2024 12:05:28 PM</span>
+<span class='badge badge-danger'>05.15.2024 12:05:29 PM</span>
+<span class='badge badge-default'>00:00:01:545</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:28 PM</td>
+        <td>
+          Give Username and Password to get Access Token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:28 PM</td>
+        <td>
+          Get the delivery number to optimize the delivery based on vehicle type
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:28 PM</td>
+        <td>
+          Give the dock number for the delivery to be optimized
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:28 PM</td>
+        <td>
+          Provide the vehicle type and vehicle registration number for the delivery to be optimized
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:28 PM</td>
+        <td>
+          Requester calls the optimize delivery endpoint to optimize delivery for a wave
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:28 PM</td>
+        <td>
+          Send username and password to get accessToken
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:28 PM</td>
+        <td>
+          Base URL is : https://canary.api.meradmart.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:28 PM</td>
+        <td>
+          Headers are - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:28 PM</td>
+        <td>
+          [Content-Type=application/json, username=1231459, password=Dmart@123]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:28 PM</td>
+        <td>
+          Endpoint is : /iam/authenticate/v1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:29 PM</td>
+        <td>
+          Authentication API Response is : 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:29 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-2'></div>
+ <script>
+  function jsonTreeCreate2() { 
+   document.getElementById('code-block-json-2').innerHTML = JSONTree.create({
+    "accessToken": "Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6IjY3MjUzMTE4LTVhMWQtNDZmOC05NWNiLTA4MDNiMTg2MmE0MCJ9.eyJzdWIiOiI2NWYyODQ5ZjkwOTk1OTQwMzFlNWU5NzciLCJzaXRlIjoiMTAzNCIsInJvbGVzIjpbIkRFTElWRVJZIFBMQU5ORVIiLCJESVNQQVRDSEVSIFBMQU5ORVIiLCJNRE0gQURNSU4iLCJNRE0gRURJVE9SIiwiR0FURUtFRVBFUiIsIlBJQ0sgUExBTk5FUiIsIkFETUlOIiwiQ0hFQ0tJTiBPRkZJQ0VSIiwiUFdQIFJFUE9SVFMgVklFV0VSIiwiU1RPUkUgUkVQT1JUUyBWSUVXRVIiLCJQSUNLRVIiLCJQSUNLRVIgUk8iLCJESVNQQVRDSEVSIiwiU0lDS05FU1MgVFJBQ0tFUiIsIkVYVCBVU0VSIEFETUlOIiwiTUVSQURNQVJUIFNVUFBPUlQiLCJEQyBTQ0hFRFVMRSBNQU5BR0VSIiwiUFJPVE9UWVBFIEFETUlOIiwiV0FWRSBQTEFOTkVSIiwiV0FWRSBQSUNLIFBMQU5ORVIiLCJTVE9SRSBSRUNFSVZFUiIsIlBJQ0sgUExBTk5FUiBSTyIsIkRFTElWRVJZIFBMQU5ORVIgUk8iLCJESVNQQVRDSEVSIFBMQU5ORVIgUk8iLCJESVNQQVRDSEVSIFJPIiwiREMgQ09ORklHIE1BTkFHRVIiLCJDSEVDS0lOIE9GRklDRVIgUk8iLCJTVE9SRSBSRUNFSVZFUiBSTyIsIlNUT1JFIE1BTkFHRVIiLCJSRVBPUlRTIFZJRVdFUiIsIlJFUE9SVFMgQURNSU4iXSwiaXNzIjoiaHR0cHM6XC9cL3d3dy5tZXJhZG1hcnQuY29tIiwiZXhwIjoxNzE1ODQxMzI4LCJpYXQiOjE3MTU3NTQ5MjgsInVzZXIiOiIxMjMxNDU5IiwianRpIjoiYmFmMjlkYTItMjAxZS00MWNjLWEzMmYtMTIwYzZlY2NlMzJhIn0.ku1pa0LGs-b3hCdxfU_OM32gP0568bqVeHjQ9N9SDcIwm1utrdte2fsrAAkZD1CbNm5lqKAIlv58vFGOIG79DTD8CXVH5wXZYZg-CD4Q1r020EieJnjiqR6Ykki1dPyO1EKkpuI1X_Gf-7-ip4N8PzsjEXwWZ7UXW_A9AmgT1zjb7U8BOwHgxxNcQ3js5KjJEnPyc8x-J_rCdNbHqsEVmfCZmWSkYjhbY-bBqKSV0QFP0iBcCm1O-VexwK9cAUyCarItJs_q7PyVUVn_X2WeqKA_tpTJsT8stcBcGsoySoo6i6H8dNQSUiHMzwgJlbeAXd442PCQELsEhI17r5RcPg",
+    "refreshToken": "Bearer eyJ0eXBlIjoicnQiLCJhbGciOiJSUzI1NiIsImtpZCI6IjY3MjUzMTE4LTVhMWQtNDZmOC05NWNiLTA4MDNiMTg2MmE0MCJ9.eyJzdWIiOiI2NWYyODQ5ZjkwOTk1OTQwMzFlNWU5NzciLCJpc3MiOiJodHRwczpcL1wvd3d3Lm1lcmFkbWFydC5jb20iLCJleHAiOjE3MTU5Mjc3MjgsImlhdCI6MTcxNTc1NDkyOCwidXNlciI6IjEyMzE0NTkiLCJqdGkiOiJjM2JkNGJhMy1lNGMxLTQwN2MtOWRmZC0zODkwZjhlZjJkYzUifQ.VHsb24p9zYCJLgl246sntAnmYYIbGK43Tr5rGjYbeKV9nXYv8xWBXjLBsuSBIJ-5-Qb9UX6My65Q-VsNPPS79Psk0Psy40pOesVFJTlLG6DSMjFcmx18Og4vCvuUfoHRvWaO7K4TlJGOwIZzya8wrd_KVuURNmIwPtmForYYjBu5e1mN0_N1KTZRkOEUhSWevkekvgjexXK8Df1oRjdIYs2fdcLDl4dgf7QOeVrozvzNAXJbyq1Tjj2bUAdUjblMtppaFVd3WFl165sF8msPclUJzGKInLf_zXSBZkZw6QpSQHZ1KbN7fMlpIjziETMCtQcTJZ7XLFdONSCUsv_JGQ"
+}); 
+  }
+  jsonTreeCreate2();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:29 PM</td>
+        <td>
+          Response Status Code for Authentication is 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:29 PM</td>
+        <td>
+          Response Time is 521 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:29 PM</td>
+        <td>
+          Base URL is : https://canary.api.meradmart.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:29 PM</td>
+        <td>
+          Headers are - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:29 PM</td>
+        <td>
+          [Content-Type=application/json, Authorization=Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6IjY3MjUzMTE4LTVhMWQtNDZmOC05NWNiLTA4MDNiMTg2MmE0MCJ9.eyJzdWIiOiI2NWYyODQ5ZjkwOTk1OTQwMzFlNWU5NzciLCJzaXRlIjoiMTAzNCIsInJvbGVzIjpbIkRFTElWRVJZIFBMQU5ORVIiLCJESVNQQVRDSEVSIFBMQU5ORVIiLCJNRE0gQURNSU4iLCJNRE0gRURJVE9SIiwiR0FURUtFRVBFUiIsIlBJQ0sgUExBTk5FUiIsIkFETUlOIiwiQ0hFQ0tJTiBPRkZJQ0VSIiwiUFdQIFJFUE9SVFMgVklFV0VSIiwiU1RPUkUgUkVQT1JUUyBWSUVXRVIiLCJQSUNLRVIiLCJQSUNLRVIgUk8iLCJESVNQQVRDSEVSIiwiU0lDS05FU1MgVFJBQ0tFUiIsIkVYVCBVU0VSIEFETUlOIiwiTUVSQURNQVJUIFNVUFBPUlQiLCJEQyBTQ0hFRFVMRSBNQU5BR0VSIiwiUFJPVE9UWVBFIEFETUlOIiwiV0FWRSBQTEFOTkVSIiwiV0FWRSBQSUNLIFBMQU5ORVIiLCJTVE9SRSBSRUNFSVZFUiIsIlBJQ0sgUExBTk5FUiBSTyIsIkRFTElWRVJZIFBMQU5ORVIgUk8iLCJESVNQQVRDSEVSIFBMQU5ORVIgUk8iLCJESVNQQVRDSEVSIFJPIiwiREMgQ09ORklHIE1BTkFHRVIiLCJDSEVDS0lOIE9GRklDRVIgUk8iLCJTVE9SRSBSRUNFSVZFUiBSTyIsIlNUT1JFIE1BTkFHRVIiLCJSRVBPUlRTIFZJRVdFUiIsIlJFUE9SVFMgQURNSU4iXSwiaXNzIjoiaHR0cHM6XC9cL3d3dy5tZXJhZG1hcnQuY29tIiwiZXhwIjoxNzE1ODQxMzI4LCJpYXQiOjE3MTU3NTQ5MjgsInVzZXIiOiIxMjMxNDU5IiwianRpIjoiYmFmMjlkYTItMjAxZS00MWNjLWEzMmYtMTIwYzZlY2NlMzJhIn0.ku1pa0LGs-b3hCdxfU_OM32gP0568bqVeHjQ9N9SDcIwm1utrdte2fsrAAkZD1CbNm5lqKAIlv58vFGOIG79DTD8CXVH5wXZYZg-CD4Q1r020EieJnjiqR6Ykki1dPyO1EKkpuI1X_Gf-7-ip4N8PzsjEXwWZ7UXW_A9AmgT1zjb7U8BOwHgxxNcQ3js5KjJEnPyc8x-J_rCdNbHqsEVmfCZmWSkYjhbY-bBqKSV0QFP0iBcCm1O-VexwK9cAUyCarItJs_q7PyVUVn_X2WeqKA_tpTJsT8stcBcGsoySoo6i6H8dNQSUiHMzwgJlbeAXd442PCQELsEhI17r5RcPg]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:29 PM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:29 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-3'></div>
+ <script>
+  function jsonTreeCreate3() { 
+   document.getElementById('code-block-json-3').innerHTML = JSONTree.create([{"dlvNumber":"9338589810","dock":"D2","vehicles":[{"vehicleType":"1109","vehicleRegNum":""}]}]); 
+  }
+  jsonTreeCreate3();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:29 PM</td>
+        <td>
+          Endpoint is : /wms/wave-planner/optimize/v1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:29 PM</td>
+        <td>
+          Response is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:29 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-4'></div>
+ <script>
+  function jsonTreeCreate4() { 
+   document.getElementById('code-block-json-4').innerHTML = JSONTree.create([
+    {
+        "dlvNumber": "9338589810",
+        "dstSiteId": "4017",
+        "dstSiteName": "Thane Garden Estate",
+        "srcSiteId": "1014",
+        "srcSiteName": "ASL FMCG DC Pune Chandkhed",
+        "proposedDlvDate": "2024-05-15T00:00:00Z",
+        "deliveryStatus": "CREATED",
+        "dock": "D2",
+        "metrics": {
+            "totalOriginalItems": 5,
+            "totalOriginalBoxes": 10,
+            "totalOriginalWt": 0.022392,
+            "totalOriginalVol": 2.688,
+            "totalAdjustedItems": 5,
+            "totalAdjustedBoxes": 10,
+            "totalAdjustedWt": 0.022392,
+            "totalAdjustedVol": 2.688
+        },
+        "dlvItems": null,
+        "vehicles": [
+            {
+                "vehicleType": "1109",
+                "vehicleRegNum": "",
+                "vehicleCapacity": {
+                    "MaxWt": 7.5,
+                    "MaxVol": 850
+                }
+            }
+        ],
+        "currentDriver": {
+            "driverName": "",
+            "driverMobile": ""
+        },
+        "splitRequired": false
+    }
+]); 
+  }
+  jsonTreeCreate4();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:29 PM</td>
+        <td>
+          Response status code is 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:29 PM</td>
+        <td>
+          Response Time is 481 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:29 PM</td>
+        <td>
+          Verify that status code be equal to 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:05:29 PM</td>
+        <td>
+          <span class='badge white-text green'>Passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:29 PM</td>
+        <td>
+          Expected Status Code is 200 and the Actual Status Code is 200
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Confirm deliveries for a Wave</p>
+            <p class="text-sm">
+              <span>12:05:29 PM</span> / <span>00:00:01:455</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Confirm deliveries for a Wave</h5>
+<span class='badge badge-success'>05.15.2024 12:05:29 PM</span>
+<span class='badge badge-danger'>05.15.2024 12:05:31 PM</span>
+<span class='badge badge-default'>00:00:01:455</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:29 PM</td>
+        <td>
+          Give Username and Password to get Access Token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:29 PM</td>
+        <td>
+          Get the response from the optimize delivery API to confirm the wave
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:30 PM</td>
+        <td>
+          Give the status for confirming the wave
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:30 PM</td>
+        <td>
+          Requester calls the confirm wave endpoint to optimize delivery for a wave
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:30 PM</td>
+        <td>
+          Send username and password to get accessToken
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:30 PM</td>
+        <td>
+          Base URL is : https://canary.api.meradmart.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:30 PM</td>
+        <td>
+          Headers are - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:30 PM</td>
+        <td>
+          [Content-Type=application/json, username=101204, password=Dmart@12345]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:30 PM</td>
+        <td>
+          Endpoint is : /iam/authenticate/v1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:30 PM</td>
+        <td>
+          Authentication API Response is : 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:30 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-5'></div>
+ <script>
+  function jsonTreeCreate5() { 
+   document.getElementById('code-block-json-5').innerHTML = JSONTree.create({
+    "accessToken": "Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6IjY3MjUzMTE4LTVhMWQtNDZmOC05NWNiLTA4MDNiMTg2MmE0MCJ9.eyJzdWIiOiI2NTlmZTUxMzVjMmZkNjE5YjQwMzI4NWIiLCJzaXRlIjoiMTAxNCIsInJvbGVzIjpbIkRFTElWRVJZIFBMQU5ORVIiLCJERUxJVkVSWSBQTEFOTkVSIFJPIiwiV0FWRSBQTEFOTkVSIl0sImlzcyI6Imh0dHBzOlwvXC93d3cubWVyYWRtYXJ0LmNvbSIsImV4cCI6MTcxNTg0MTMzMCwiaWF0IjoxNzE1NzU0OTMwLCJ1c2VyIjoiMTAxMjA0IiwianRpIjoiZTQ1NTcwNjgtNWNiYS00OGZmLWJhMzctYTE5NTY0OTAyNWU1In0.i8ymwUx5NKF3Vt0Q-Sk0UPRv_YD1w4wX_JHDAAaypQr4z1odCa4Mza0WPEQxAF_SY3sOqDbdQHziXni6_ipvjZvWljaH3-XgLDTL8-9nXqdc2trBKAIHMQjUIofeAYxKJhoveRtZ4NSjz9EA85_d0-DGazJvh9LFYvNoRgOU6cXG0OYcDuDKjI8Ivg_Lh-tJxQ9Cyqp6kwtV3orV4uEx1-Q6_QdjfCwhgF6uz3kHrTIspXA8qqnktt-7ey-TFDf1rIilbuluhZb34v_juByHdQn6ZSSN-mYffL8xkGWGQ6D8ZEHzzaeyP3PcmchOrZFbkL0c2OJewUfYzByDBVFbAA",
+    "refreshToken": "Bearer eyJ0eXBlIjoicnQiLCJhbGciOiJSUzI1NiIsImtpZCI6IjY3MjUzMTE4LTVhMWQtNDZmOC05NWNiLTA4MDNiMTg2MmE0MCJ9.eyJzdWIiOiI2NTlmZTUxMzVjMmZkNjE5YjQwMzI4NWIiLCJpc3MiOiJodHRwczpcL1wvd3d3Lm1lcmFkbWFydC5jb20iLCJleHAiOjE3MTU5Mjc3MzAsImlhdCI6MTcxNTc1NDkzMCwidXNlciI6IjEwMTIwNCIsImp0aSI6IjgwNTMyODAwLThkNjYtNDU1MS05NjA0LWM3NWRhZmM5ZGY1OSJ9.K9Z5EOeFJm3ik1PXu85Mytop2qklrM6iP6uZ1wxQ-GlJhtSpazUTaCuyVil7BeTxHI0JgNeMZ7gQ23A_7BRoYcRlAKBEI_-ZAA52Fnd1_AxTzZDgqV5y5nRIxqihRnzABBtNH8SZgTbCEvYlqFJs63cwXTHTXLJrjQrztUlAVW8Fz4KbVf66ONoYuXT4K7CloL7mORBN0CX87mdlmAOpN30iNqC1rVB4MZgHbIpfosIP8_2nu1NgTDq7qtzBjmGpvDVr9NsP8ICFmFw7Brip4wBf7sIPG8swDWcKDPvFH2IuHXfK7h5qSvNf2mcVy1MlGAhHgiSfO7fml9sp9FRdow"
+}); 
+  }
+  jsonTreeCreate5();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:30 PM</td>
+        <td>
+          Response Status Code for Authentication is 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:30 PM</td>
+        <td>
+          Response Time is 506 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:30 PM</td>
+        <td>
+          Base URL is : https://canary.api.meradmart.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:30 PM</td>
+        <td>
+          Headers are - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:30 PM</td>
+        <td>
+          [Content-Type=application/json, Authorization=Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6IjY3MjUzMTE4LTVhMWQtNDZmOC05NWNiLTA4MDNiMTg2MmE0MCJ9.eyJzdWIiOiI2NTlmZTUxMzVjMmZkNjE5YjQwMzI4NWIiLCJzaXRlIjoiMTAxNCIsInJvbGVzIjpbIkRFTElWRVJZIFBMQU5ORVIiLCJERUxJVkVSWSBQTEFOTkVSIFJPIiwiV0FWRSBQTEFOTkVSIl0sImlzcyI6Imh0dHBzOlwvXC93d3cubWVyYWRtYXJ0LmNvbSIsImV4cCI6MTcxNTg0MTMzMCwiaWF0IjoxNzE1NzU0OTMwLCJ1c2VyIjoiMTAxMjA0IiwianRpIjoiZTQ1NTcwNjgtNWNiYS00OGZmLWJhMzctYTE5NTY0OTAyNWU1In0.i8ymwUx5NKF3Vt0Q-Sk0UPRv_YD1w4wX_JHDAAaypQr4z1odCa4Mza0WPEQxAF_SY3sOqDbdQHziXni6_ipvjZvWljaH3-XgLDTL8-9nXqdc2trBKAIHMQjUIofeAYxKJhoveRtZ4NSjz9EA85_d0-DGazJvh9LFYvNoRgOU6cXG0OYcDuDKjI8Ivg_Lh-tJxQ9Cyqp6kwtV3orV4uEx1-Q6_QdjfCwhgF6uz3kHrTIspXA8qqnktt-7ey-TFDf1rIilbuluhZb34v_juByHdQn6ZSSN-mYffL8xkGWGQ6D8ZEHzzaeyP3PcmchOrZFbkL0c2OJewUfYzByDBVFbAA]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:30 PM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:30 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-6'></div>
+ <script>
+  function jsonTreeCreate6() { 
+   document.getElementById('code-block-json-6').innerHTML = JSONTree.create({"deliveries":[{"dlvNumber":"9338589810","dstSiteId":"4017","dstSiteName":"Thane Garden Estate","srcSiteId":"1014","srcSiteName":"ASL FMCG DC Pune Chandkhed","proposedDlvDate":"2024-05-15T00:00:00Z","deliveryStatus":"CREATED","dock":"D2","metrics":{"totalOriginalItems":5,"totalOriginalBoxes":10,"totalOriginalWt":0.022392,"totalOriginalVol":2.688,"totalAdjustedItems":5,"totalAdjustedBoxes":10,"totalAdjustedWt":0.022392,"totalAdjustedVol":2.688},"dlvItems":null,"vehicles":[{"vehicleType":"1109","vehicleRegNum":"","vehicleCapacity":{"MaxWt":7.5,"MaxVol":850}}],"currentDriver":{"driverName":"","driverMobile":""},"splitRequired":false}],"status":"PLANNED"}); 
+  }
+  jsonTreeCreate6();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:30 PM</td>
+        <td>
+          Endpoint is : /wms/wave-planner/v1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:31 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-7'></div>
+ <script>
+  function jsonTreeCreate7() { 
+   document.getElementById('code-block-json-7').innerHTML = JSONTree.create(Response is {
+    "siteId": "1014",
+    "waveId": "15052024-1014-11",
+    "message": "",
+    "deliveries": [
+        {
+            "dlvNumber": "9338589810",
+            "dstSiteId": "4017",
+            "dstSiteName": "Thane Garden Estate",
+            "proposedDlvDate": "2024-05-15T00:00:00Z",
+            "dock": "D2",
+            "metrics": {
+                "totalOriginalItems": 5,
+                "totalOriginalBoxes": 10,
+                "totalOriginalWt": 0.022392,
+                "totalOriginalVol": 2.688,
+                "totalAdjustedItems": 5,
+                "totalAdjustedBoxes": 10,
+                "totalAdjustedWt": 0.022392,
+                "totalAdjustedVol": 2.688
+            },
+            "dlvItems": null,
+            "vehicles": [
+                {
+                    "vehicleType": "1109",
+                    "vehicleRegNum": "",
+                    "vehicleCapacity": {
+                        "MaxWt": 0,
+                        "MaxVol": 0
+                    }
+                }
+            ],
+            "currentDriver": {
+                "driverName": "",
+                "driverMobile": ""
+            },
+            "splitRequired": false
+        }
+    ],
+    "status": "PLANNED",
+    "transferOrders": null,
+    "totalDlvMetrics": {
+        "totalOriginalItems": 5,
+        "totalOriginalBoxes": 10,
+        "totalOriginalWt": 0.022392,
+        "totalOriginalVol": 2.688,
+        "totalAdjustedItems": 5,
+        "totalAdjustedBoxes": 10,
+        "totalAdjustedWt": 0.022392,
+        "totalAdjustedVol": 2.688
+    },
+    "totalToMetrics": {
+        "totalOriginalItems": 0,
+        "totalOriginalBoxes": 0,
+        "totalOriginalWt": 0,
+        "totalOriginalVol": 0,
+        "totalAdjustedItems": 0,
+        "totalAdjustedBoxes": 0,
+        "totalAdjustedWt": 0,
+        "totalAdjustedVol": 0
+    },
+    "timeSeries": [
+        {
+            "action": "PLANNED",
+            "actionedAt": "2024-05-15T06:35:31.430891238Z"
+        }
+    ],
+    "createdOn": "2024-05-15T06:35:31.430891137Z",
+    "allTOCreated": false,
+    "isOptimized": false,
+    "isWaveImported": true,
+    "to_progress_per": 0
+}); 
+  }
+  jsonTreeCreate7();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:31 PM</td>
+        <td>
+          Response status code is 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:31 PM</td>
+        <td>
+          Response Time is 796 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:31 PM</td>
+        <td>
+          Verify that status code be equal to 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:05:31 PM</td>
+        <td>
+          <span class='badge white-text green'>Passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:31 PM</td>
+        <td>
+          Expected Status Code is 201 and the Actual Status Code is 201
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Assign vehicles for a delivery</p>
+            <p class="text-sm">
+              <span>12:05:31 PM</span> / <span>00:00:00:884</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Assign vehicles for a delivery</h5>
+<span class='badge badge-success'>05.15.2024 12:05:31 PM</span>
+<span class='badge badge-danger'>05.15.2024 12:05:32 PM</span>
+<span class='badge badge-default'>00:00:00:884</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:31 PM</td>
+        <td>
+          Give Username and Password to get Access Token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:31 PM</td>
+        <td>
+          Get the delivery number to assign vehicle to the delivery
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:31 PM</td>
+        <td>
+          Get the dock number from which items will be loaded into a vehicle
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:31 PM</td>
+        <td>
+          Provide the current driver for the vehicle
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:31 PM</td>
+        <td>
+          Give the vehicle type and vehicle registration number to assign vehicle to delivery
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:31 PM</td>
+        <td>
+          Requester calls the assign vehicle endpoint to assign vehicle for a delivery
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:31 PM</td>
+        <td>
+          Send username and password to get accessToken
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:31 PM</td>
+        <td>
+          Base URL is : https://canary.api.meradmart.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:31 PM</td>
+        <td>
+          Headers are - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:31 PM</td>
+        <td>
+          [Content-Type=application/json, username=101201, password=Dmart@1234567]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:31 PM</td>
+        <td>
+          Endpoint is : /iam/authenticate/v1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:31 PM</td>
+        <td>
+          Authentication API Response is : 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:31 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-8'></div>
+ <script>
+  function jsonTreeCreate8() { 
+   document.getElementById('code-block-json-8').innerHTML = JSONTree.create({
+    "accessToken": "Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6IjY3MjUzMTE4LTVhMWQtNDZmOC05NWNiLTA4MDNiMTg2MmE0MCJ9.eyJzdWIiOiI2NTc3Zjk4MTMwZTMzZDMzOTAzZTc4NzYiLCJzaXRlIjoiMTAxNCIsInJvbGVzIjpbIkRFTElWRVJZIFBMQU5ORVIiLCJESVNQQVRDSEVSIFBMQU5ORVIiLCJQSUNLRVIiLCJESVNQQVRDSEVSIiwiTURNIEFETUlOIiwiUElDSyBQTEFOTkVSIiwiQURNSU4iLCJNRE0gRURJVE9SIiwiR0FURUtFRVBFUiIsIlBJQ0sgUExBTk5FUiBSTyIsIkRFTElWRVJZIFBMQU5ORVIgUk8iLCJDSEVDS0lOIE9GRklDRVIgUk8iLCJDSEVDS0lOIE9GRklDRVIiLCJXQVZFIFBMQU5ORVIiLCJXQVZFIFBJQ0sgUExBTk5FUiIsIlBST1RPVFlQRSBBRE1JTiIsIlBJQ0tFUiBSTyJdLCJpc3MiOiJodHRwczpcL1wvd3d3Lm1lcmFkbWFydC5jb20iLCJleHAiOjE3MTU4NDEzMzEsImlhdCI6MTcxNTc1NDkzMSwidXNlciI6IjEwMTIwMSIsImp0aSI6IjExNjQxM2Y0LWQ1N2QtNGNhYy05MDdmLTc5MjQ2YzVlYzYzYiJ9.vlpgitcth9wkjOa_aFkjP_J4-eXlM3B-UOBE6IwbCOwWF1mySpjD_ikCP_EFQ2ygFK3U8N2nPiw5V0k3UY5O0vPhChBW2p3PuUMhDSY8Gz3uFgFhRpWV-Gol-zhZjTVeojz_M1i2rqYYQ_0xmTBGR38Kn76vICku1_TwgGAB5w0nx5QRYJwT1KAVqr4EA3rW1ePZjLL9n-X7UDVIEJbGNAXgUMS3V8VYVkPEV1SGQ9LRMqYOrX5ALh6SqzdLky04Id3dLGwkogVpRfTQqg4r0YnvIzEsexQiDoqfqGPdSMJo8q32aA9xvBQ8cp82AFj3N6yTo3cx9a2KbJCs5huNqA",
+    "refreshToken": "Bearer eyJ0eXBlIjoicnQiLCJhbGciOiJSUzI1NiIsImtpZCI6IjY3MjUzMTE4LTVhMWQtNDZmOC05NWNiLTA4MDNiMTg2MmE0MCJ9.eyJzdWIiOiI2NTc3Zjk4MTMwZTMzZDMzOTAzZTc4NzYiLCJpc3MiOiJodHRwczpcL1wvd3d3Lm1lcmFkbWFydC5jb20iLCJleHAiOjE3MTU5Mjc3MzEsImlhdCI6MTcxNTc1NDkzMSwidXNlciI6IjEwMTIwMSIsImp0aSI6IjAwZTVjN2NjLTkwZmYtNDQ0Yi04YjY3LTFlOWQ4ZDY3ZDRjNyJ9.ApjLtfYzFL_B1dyCn3kimclplMnOrXSJYYF5lfQmfvDmALc7NIUue6QgzSdbOeywSp05O8pa34-LLqG28SjwayzwCWRAanNcIRDJqup-SUD87Vo_2XXEC7mWeu5_MlKwso2Y3CQSerd7XrIeHpXf9gSJZJGvC_ktOT0HGA6GAhmqpr4ikiPv5N57Ntmhwe6nvMsmXw6Z85MJfj2zU_m8XeCEBxr0rl76CQK2MEzmcLw3XJAaoBe_xGeKh-RKLHuct31c9Iki79TbGraBm8Usc-bI7w8gZelNbGMj9smhwyOkRL2fEWLmFl9ECOan5e47SlbjXuBT6o7W5IatvT-ySA"
+}); 
+  }
+  jsonTreeCreate8();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:31 PM</td>
+        <td>
+          Response Status Code for Authentication is 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:31 PM</td>
+        <td>
+          Response Time is 450 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:31 PM</td>
+        <td>
+          Base URL is : https://canary.api.meradmart.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:31 PM</td>
+        <td>
+          Headers are - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:31 PM</td>
+        <td>
+          [Content-Type=application/json, Authorization=Bearer eyJ0eXBlIjoiYXQiLCJhbGciOiJSUzI1NiIsImtpZCI6IjY3MjUzMTE4LTVhMWQtNDZmOC05NWNiLTA4MDNiMTg2MmE0MCJ9.eyJzdWIiOiI2NTc3Zjk4MTMwZTMzZDMzOTAzZTc4NzYiLCJzaXRlIjoiMTAxNCIsInJvbGVzIjpbIkRFTElWRVJZIFBMQU5ORVIiLCJESVNQQVRDSEVSIFBMQU5ORVIiLCJQSUNLRVIiLCJESVNQQVRDSEVSIiwiTURNIEFETUlOIiwiUElDSyBQTEFOTkVSIiwiQURNSU4iLCJNRE0gRURJVE9SIiwiR0FURUtFRVBFUiIsIlBJQ0sgUExBTk5FUiBSTyIsIkRFTElWRVJZIFBMQU5ORVIgUk8iLCJDSEVDS0lOIE9GRklDRVIgUk8iLCJDSEVDS0lOIE9GRklDRVIiLCJXQVZFIFBMQU5ORVIiLCJXQVZFIFBJQ0sgUExBTk5FUiIsIlBST1RPVFlQRSBBRE1JTiIsIlBJQ0tFUiBSTyJdLCJpc3MiOiJodHRwczpcL1wvd3d3Lm1lcmFkbWFydC5jb20iLCJleHAiOjE3MTU4NDEzMzEsImlhdCI6MTcxNTc1NDkzMSwidXNlciI6IjEwMTIwMSIsImp0aSI6IjExNjQxM2Y0LWQ1N2QtNGNhYy05MDdmLTc5MjQ2YzVlYzYzYiJ9.vlpgitcth9wkjOa_aFkjP_J4-eXlM3B-UOBE6IwbCOwWF1mySpjD_ikCP_EFQ2ygFK3U8N2nPiw5V0k3UY5O0vPhChBW2p3PuUMhDSY8Gz3uFgFhRpWV-Gol-zhZjTVeojz_M1i2rqYYQ_0xmTBGR38Kn76vICku1_TwgGAB5w0nx5QRYJwT1KAVqr4EA3rW1ePZjLL9n-X7UDVIEJbGNAXgUMS3V8VYVkPEV1SGQ9LRMqYOrX5ALh6SqzdLky04Id3dLGwkogVpRfTQqg4r0YnvIzEsexQiDoqfqGPdSMJo8q32aA9xvBQ8cp82AFj3N6yTo3cx9a2KbJCs5huNqA]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:31 PM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:31 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-9'></div>
+ <script>
+  function jsonTreeCreate9() { 
+   document.getElementById('code-block-json-9').innerHTML = JSONTree.create({"dlvNumber":"9393803972","dock":"A2","currentDriver":null,"vehicles":[{"vehicleType":"1109","vehicleRegNum":"MH04FX1109"}]}); 
+  }
+  jsonTreeCreate9();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:31 PM</td>
+        <td>
+          Endpoint is : /wms/wave-planner/assign/vehicle/v1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:32 PM</td>
+        <td>
+          Response is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:32 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-10'></div>
+ <script>
+  function jsonTreeCreate10() { 
+   document.getElementById('code-block-json-10').innerHTML = JSONTree.create(null); 
+  }
+  jsonTreeCreate10();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:32 PM</td>
+        <td>
+          Response status code is 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:32 PM</td>
+        <td>
+          Response Time is 394 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:32 PM</td>
+        <td>
+          Verify that status code be equal to 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:05:32 PM</td>
+        <td>
+          <span class='badge white-text green'>Passed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:32 PM</td>
+        <td>
+          Expected Status Code is 200 and the Actual Status Code is 200
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Create transfer order for a delivery</p>
+            <p class="text-sm">
+              <span>12:05:32 PM</span> / <span>00:00:00:726</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Create transfer order for a delivery</h5>
+<span class='badge badge-success'>05.15.2024 12:05:32 PM</span>
+<span class='badge badge-danger'>05.15.2024 12:05:33 PM</span>
+<span class='badge badge-default'>00:00:00:726</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:32 PM</td>
+        <td>
+          Give Username and Password to get Access Token
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:32 PM</td>
+        <td>
+          Provide the warehouse number of a site
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:32 PM</td>
+        <td>
+          Give the source site id for which transfer order has to be created
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:32 PM</td>
+        <td>
+          Give the destination plant id to which items has to be delivered
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:32 PM</td>
+        <td>
+          Give the group delivery number for the transfer order
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:32 PM</td>
+        <td>
+          Get the transfer order number to create TO for a delivery
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:32 PM</td>
+        <td>
+          Give the movement type for a transfer order
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:32 PM</td>
+        <td>
+          Get the date of creation of the transfer order
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:32 PM</td>
+        <td>
+          Get the time of creation of the transfer order
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:32 PM</td>
+        <td>
+          Get the delivery number for which transfer has to be created
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:32 PM</td>
+        <td>
+          Give the Excel file to get the items for a transfer order
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:32 PM</td>
+        <td>
+          Give the sheet name and the number of items required in a transfer order
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:32 PM</td>
+        <td>
+          Requester calls the outbound transfer order endpoint to create new delivery for a wave
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:32 PM</td>
+        <td>
+          Base URL is : https://canary.api.meradmart.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:32 PM</td>
+        <td>
+          Headers are - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:32 PM</td>
+        <td>
+          [Content-Type=application/json, username=integrator, password=3poXy$6o29, requestId=5001597022-1]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:32 PM</td>
+        <td>
+          Request Body is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:32 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-11'></div>
+ <script>
+  function jsonTreeCreate11() { 
+   document.getElementById('code-block-json-11').innerHTML = JSONTree.create([{"whNumber":"114","srcPlant":"1014","destPlant":"4017","grpDlv":"8144031899","txfOrdNumber":"9338589810","movementType":"850","creationDate":"20240515","creationTime":"120532","dlvNumbers":["9338589810"],"transferOrderItems":[{"txfOrdItemSeq":"0001","matNumber":"200000864","matDesc":"AASHIRVAAD CHILLI POWDER(500G)","ean":"8901725125172","batchNum":"2301210180","srcStorageType":"HRS","srcStorageBin":"FRS-F04","srcQty":"24","caselot":"12","uom":"EA","mrp":"180.00","itemWeight":"0.502","itemVolume":"0.057","itemType":"ZBGR","bbDate":"20211020","storageLoc":"3000","destStorageType":"200","palletQty":"384.000","binSeq":"1250","availableBinQty":"24"},{"txfOrdItemSeq":"0002","matNumber":"200005944","matDesc":"MAGGI MASALA MAGIC(72G)","ean":"8901058869187","batchNum":"0101210058","srcStorageType":"HRS","srcStorageBin":"A010-26-1A","srcQty":"24","caselot":"12","uom":"EA","mrp":"58.00","itemWeight":"0.108","itemVolume":"0.029","itemType":"ZBGR","bbDate":"20210928","storageLoc":"3000","destStorageType":"200","palletQty":"1120.000","binSeq":"1250","availableBinQty":"24"},{"txfOrdItemSeq":"0003","matNumber":"200007150","matDesc":"MAGGI MASALA MAGIC(120G)","ean":"8901058890341","batchNum":"0112200096","srcStorageType":"HRS","srcStorageBin":"A004-14-1A","srcQty":"24","caselot":"12","uom":"EA","mrp":"96.00","itemWeight":"0.175","itemVolume":"0.003","itemType":"ZBGR","bbDate":"20210828","storageLoc":"3000","destStorageType":"200","palletQty":"720.000","binSeq":"501","availableBinQty":"24"},{"txfOrdItemSeq":"0004","matNumber":"300000023","matDesc":"GILLETTE SER MOSTRZNG SHAVE GEL-60G","ean":"4902430722001","batchNum":"0101210085","srcStorageType":"HRS","srcStorageBin":"A020-02-1B","srcQty":"24","caselot":"12","uom":"EA","mrp":"85.00","itemWeight":"0.083","itemVolume":"0.007","itemType":"ZCOU","bbDate":"20240101","storageLoc":"3000","destStorageType":"200","palletQty":"3456.000","binSeq":"2521","availableBinQty":"24"},{"txfOrdItemSeq":"0005","matNumber":"300000025","matDesc":"GILLETTE SHAVING BRUSH-1 PCS","ean":"4987176030061","batchNum":"0111200065","srcStorageType":"HRS","srcStorageBin":"A030-02-1B","srcQty":"24","caselot":"12","uom":"EA","mrp":"65.00","itemWeight":"0.065","itemVolume":"0.016","itemType":"ZCOU","bbDate":"20241031","storageLoc":"3000","destStorageType":"200","palletQty":"2052.000","binSeq":"4078","availableBinQty":"24"}]}]); 
+  }
+  jsonTreeCreate11();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:32 PM</td>
+        <td>
+          Endpoint is : /pi-handler/outbound/to/v1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:33 PM</td>
+        <td>
+          Response is - 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:33 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-12'></div>
+ <script>
+  function jsonTreeCreate12() { 
+   document.getElementById('code-block-json-12').innerHTML = JSONTree.create(); 
+  }
+  jsonTreeCreate12();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:33 PM</td>
+        <td>
+          Response status code is 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:33 PM</td>
+        <td>
+          Response Time is 390 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:33 PM</td>
+        <td>
+          Verify that status code be equal to 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:05:33 PM</td>
+        <td>
+          <span class='badge white-text red'>Failed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:05:33 PM</td>
+        <td>
+          Expected status code is 201 but the Actual status code is 200
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>May 15, 2024 12:05:22 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>May 15, 2024 12:05:33 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>4</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='80%'>
+<b>4</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='20%'><b>1</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='3%'><b>4</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>1</b> events failed,
+<b data-tooltip='%'>127</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Create delivery for sorter using excel":5.723,"Optimize the delivery created for a wave":1.545,"Confirm deliveries for a Wave":1.455,"Assign vehicles for a delivery":0.884,"Create transfer order for a delivery":0.726
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 4,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 4,
+failEvents: 1,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 127
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

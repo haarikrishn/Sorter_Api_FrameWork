@@ -1,0 +1,157 @@
+{
+
+  "type": "object",
+  "properties": {
+    "requestId": {
+      "type": ["string", "null"],
+      "not": { "type": "null" }
+    },
+    "priceBoards": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "priceBoard": {
+              "type": "string"
+            },
+            "pbStatus": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "priceBoard",
+            "pbStatus"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "priceBoard": {
+              "type": "string"
+            },
+            "pbStatus": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "priceBoard",
+            "pbStatus"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "priceBoard": {
+              "type": "string"
+            },
+            "pbStatus": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "priceBoard",
+            "pbStatus"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "priceBoard": {
+              "type": "string"
+            },
+            "pbStatus": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "priceBoard",
+            "pbStatus"
+          ]
+        }
+      ]
+    },
+    "requestedAt": {
+      "type": ["string", "null"],
+      "not": { "type": "null" }
+    },
+    "articleName": {
+      "type": ["string", "null"],
+      "not": { "type": "null" }
+    },
+    "articlePrice": {
+      "type": "string"
+    },
+    "ean": {
+      "type": ["string", "null"],
+      "not": { "type": "null" }
+    },
+    "categoryCode": {
+      "type": ["string", "null"],
+      "not": { "type": "null" }
+    },
+    "articleCode": {
+      "type": "string"
+    },
+    "articleMrp": {
+      "type": "string"
+    },
+    "uom": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "object",
+      "properties": {
+        "requestedQuantity": {
+          "type": "integer"
+        },
+        "refilledQuantity": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "requestedQuantity",
+        "refilledQuantity"
+      ]
+    },
+    "comments": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "by": {
+              "type": "string"
+            },
+            "comment": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "by",
+            "comment"
+          ]
+        }
+      ]
+    },
+    "task": {
+      "type": ["string", "null"],
+      "not": { "type": "null" }
+    }
+  },
+  "required": [
+    "requestId",
+    "priceBoards",
+    "requestedAt",
+    "articleName",
+    "articlePrice",
+    "ean",
+    "categoryCode",
+    "articleCode",
+    "articleMrp",
+    "uom",
+    "quantity",
+    "comments",
+    "task"
+  ]
+}

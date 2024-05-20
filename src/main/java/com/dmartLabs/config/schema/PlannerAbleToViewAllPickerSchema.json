@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "attendeeId": {
+          "type": "string"
+        },
+        "attendeeName": {
+          "type": "string"
+        },
+        "profileType": {
+          "type": "string"
+        },
+        "attendeeMobile": {
+          "type": "string"
+        },
+        "checkinTime": {
+          "type": "string"
+        },
+        "checkoutTime": {
+          "type": "string"
+        },
+        "currentBreakDuration": {
+          "type": "string"
+        },
+        "totalBreakDuration": {
+          "type": "string"
+        },
+        "onBreak": {
+          "type": "boolean"
+        },
+        "deviceSerialNumber": {
+          "type": "string"
+        },
+        "attendeeStatus": {
+          "type": "string"
+        },
+        "totalBins": {
+          "type": "integer"
+        },
+        "totalPickedBins": {
+          "type": "integer"
+        },
+        "totalBoxes": {
+          "type": "integer"
+        },
+        "totalPickedBoxes": {
+          "type": "integer"
+        },
+        "totalScannedBoxes": {
+          "type": "integer"
+        },
+        "progress": {
+          "type": "integer"
+        },
+        "activeSince": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "attendeeId",
+        "attendeeName",
+        "profileType",
+        "attendeeMobile",
+        "checkinTime",
+        "checkoutTime",
+        "onBreak",
+        "deviceSerialNumber",
+        "attendeeStatus",
+        "totalBins",
+        "totalPickedBins",
+        "totalBoxes",
+        "totalPickedBoxes",
+        "totalScannedBoxes",
+        "progress",
+        "activeSince"
+      ]
+    }
+  ]
+}

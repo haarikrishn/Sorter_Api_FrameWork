@@ -1,0 +1,1392 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>PWP_API-Automation</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Extent Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Feb 01, 2024 09:34:36</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Feb 01, 2024 09:34:36</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Feb 01, 2024 09:35:03</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>1</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>1</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>13</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>63</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"PWP Flow":24.913
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@ConfirmDeliveryDT</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@DispatcDeliveriesDetails</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GetTO</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CreateOneDeliveryWithListOfItemsUsingDT</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GetDelCD</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@PickerCheckIn</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CreateTOForOriginalDelivery</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@AssignPicker</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GetListofDeliveries</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@VehicleAssign</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@PickerPresence</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TOBYDELIVERYNUM</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GETPICKER</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>OS</td>
+<td>windows</td>
+</tr>
+<tr>
+<td>AutomationTestEnginner</td>
+<td>Yash Mulkalwar</td>
+</tr>
+<tr>
+<td>FrameworkArchitect</td>
+<td>Raju Baligolla</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>PWP</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 1,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 13,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 63,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@ConfirmDeliveryDT</a><a class="dropdown-item" href="#">@DispatcDeliveriesDetails</a><a class="dropdown-item" href="#">@GetTO</a><a class="dropdown-item" href="#">@CreateOneDeliveryWithListOfItemsUsingDT</a><a class="dropdown-item" href="#">@GetDelCD</a><a class="dropdown-item" href="#">@PickerCheckIn</a><a class="dropdown-item" href="#">@CreateTOForOriginalDelivery</a><a class="dropdown-item" href="#">@AssignPicker</a><a class="dropdown-item" href="#">@GetListofDeliveries</a><a class="dropdown-item" href="#">@VehicleAssign</a><a class="dropdown-item" href="#">@PickerPresence</a><a class="dropdown-item" href="#">@TOBYDELIVERYNUM</a><a class="dropdown-item" href="#">@GETPICKER</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">PWP Flow</p>
+            <p class="text-sm">
+              <span>9:34:38 AM</span> / <span>00:00:24:913</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">PWP Flow</h5>
+<span class='badge badge-success'>02.01.2024 9:34:38 AM</span>
+<span class='badge badge-danger'>02.01.2024 9:35:03 AM</span>
+<span class='badge badge-default'>00:00:24:913</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Verify the functionality of CreateOneDeliveryWithListOfItemsUsingDT</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.giveUsernameAndPasswordForAccessToken(io.cucumber.datatable.DataTable)">
+                <span>Given Give Username and Password for Access Token</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>101201</td></tr><tr><td>password</td><td>Dmart@12345</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.giveUsernameAndPasswordForAccessToken(io.cucumber.datatable.DataTable)">
+                <span>Given Give Username and Password for Access Token</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>integrator</td></tr><tr><td>password</td><td>3poXy$6o29</td></tr><tr><td>requestId</td><td>0000001376364111</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.CreateDeliveryStep.assigningMainMandatoryFieldsToCreateOneDeliveryWithListOfItemsUsingDT(io.cucumber.datatable.DataTable)">
+                <span>And Assigning Main Mandatory fields to CreateOneDeliveryWithListOfItemsUsingDT</span>
+      <div><table class='markup-table table '><tr><td>srcSiteId</td><td>1014</td></tr><tr><td>dstSiteId</td><td>4019</td></tr><tr><td>whNumber</td><td>114</td></tr><tr><td>createdBy</td><td>MHK</td></tr><tr><td>totalGdsMvtStat</td><td>A</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.CreateDeliveryStep.provideDlvItemNumToCreateOneDeliveryWithListOfItemsUsingDT(io.cucumber.datatable.DataTable)">
+                <span>And Provide dlvItemNum to CreateOneDeliveryWithListOfItemsUsingDT</span>
+      <div><table class='markup-table table '><tr><td>itemSeq</td><td>stoNum</td><td>stoLineNum</td><td>ean</td><td>mrp</td><td>matNum</td><td>itemDesc</td><td>matGrp</td><td>catInd</td><td>stLoc</td><td>batch</td><td>proposedDlvQty</td><td>caselot</td><td>uom</td><td>itemWt</td><td>uomWt</td><td>itemVol</td><td>uomVol</td><td>pickStatus</td></tr><tr><td>000010</td><td>5101334418</td><td>000010</td><td>4902430905183</td><td>50.00</td><td>500017406</td><td>ORAL B KIDS 2+ YEAR TOOTHBRUSH(3N)</td><td>5OCTBRBAB</td><td>F</td><td>3000</td><td>2503210050</td><td>96.000</td><td>48.00</td><td>EA</td><td>0.067</td><td>KG</td><td>0.021</td><td>FT3</td><td>A</td></tr><tr><td>000020</td><td>5101334418</td><td>000020</td><td>8901314524010</td><td>170.00</td><td>500017575</td><td>COLGATE MAXFRESH BLUE GEL TP(300G)</td><td>5OCTTPGEL</td><td>F</td><td>3000</td><td>0103210170</td><td>96.000</td><td>48.00</td><td>EA</td><td>0.360</td><td>KG</td><td>0.027</td><td>FT3</td><td>A</td></tr><tr><td>000030</td><td>5101334418</td><td>000030</td><td>8903363007247</td><td>150.00</td><td>500017602</td><td>GRACE CITRUS PASSI SHOWER GEL 250ML</td><td>5PWLSPBWS</td><td>F</td><td>3000</td><td>0103210150</td><td>72.000</td><td>36.00</td><td>EA</td><td>0.369</td><td>KG</td><td>0.22</td><td>FT3</td><td>A</td></tr><tr><td>000040</td><td>5101334418</td><td>000040</td><td>8903363007254</td><td>150.00</td><td>500017603</td><td>GRACE DEEP IMPACT SHOWER GEL 250M</td><td>5PWLSPBWS</td><td>F</td><td>3000</td><td>0103210150</td><td>72.000</td><td>36.00</td><td>EA</td><td>0.303</td><td>KG</td><td>0.022</td><td>FT3</td><td>A</td></tr><tr><td>000050</td><td>5101334418</td><td>000050</td><td>8903363006868</td><td>149.00</td><td>500017671</td><td>MEADOWS AIR FRESHENER LAV BLS-240ML</td><td>5AFHFRSPR</td><td>G</td><td>3000</td><td>0103210149</td><td>96.000</td><td>48.00</td><td>EA</td><td>0.303</td><td>KG</td><td>0.022</td><td>FT3</td><td>A</td></tr><tr><td>000060</td><td>5101334418</td><td>000060</td><td>8901248154031</td><td>110.00</td><td>500018038</td><td>BOROPLUS ALOV HAL CH KES GEL(150ML)</td><td>5SKCSLFWS</td><td>Q</td><td>3000</td><td>0103210110</td><td>96.000</td><td>48.00</td><td>EA</td><td>0.215</td><td>KG</td><td>0.028</td><td>FT3</td><td>A</td></tr><tr><td>000070</td><td>5101334418</td><td>000070</td><td>4987176023476</td><td>199.00</td><td>500018258</td><td>PAMPERS ALOE BABY WIPS(72N)</td><td>5PHICRTSW</td><td>Q</td><td>3000</td><td>0101210199</td><td>96.000</td><td>48.00</td><td>EA</td><td>0.250</td><td>KG</td><td>0.099</td><td>FT3</td><td>A</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.CreateDeliveryStep.userCallsTheToCreateDeliveryEndPointToCreateOneDeliveryWithListOfItemsUsingDT()">
+                <span>When User calls the to createDelivery End point to   CreateOneDeliveryWithListOfItemsUsingDT</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.verifyThatStatusCodeBeEqualTo(java.lang.String)">
+                <span>Then verify that status code be equal to "201"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="24"><span class="badge log pass-bg mr-2">Pass</span>verify the functionality of GetListofDeliveriesEndpoint</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.giveUsernameAndPasswordForAccessToken(io.cucumber.datatable.DataTable)">
+                <span>Given Give Username and Password for Access Token</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>101201</td></tr><tr><td>password</td><td>Dmart@12345</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GetListOfDeleviriesStep.sendGetDeliveryEndPointToGetTheData()">
+                <span>When send GetDelivery End point to get the data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GetListOfDeleviriesStep.verifyThatStatusCodeBeEqualToForGetListofDeliveries(int)">
+                <span>Then verify that status code be equal to 200 for GetListofDeliveries</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GetListOfDeleviriesStep.validateResponseBodyOfGetListOfDeleveries()">
+                <span>And validate Response body of getListOfDeleveries</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GetListOfDeleviriesStep.validatingJsonSchemaOfObject(java.lang.String)">
+                <span>And validating JsonSchema Of object "GetListOfDeliverySchema.json"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="43"><span class="badge log pass-bg mr-2">Pass</span>Verify the functionality of confirm delivery with valid data</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.giveUsernameAndPasswordForAccessToken(io.cucumber.datatable.DataTable)">
+                <span>Given Give Username and Password for Access Token</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>101201</td></tr><tr><td>password</td><td>Dmart@12345</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.ConfirmDeliverySteps.assignTruckTypeAndDockForNewDeliveryRequest(io.cucumber.datatable.DataTable)">
+                <span>And Assign truckType and dock for new Delivery Request</span>
+      <div><table class='markup-table table '><tr><td>truckType</td><td>ACE</td></tr><tr><td>dock</td><td>A4</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.ConfirmDeliverySteps.provideDlvItemNumPlannedDlvBoxQtyAndMinimumBoxesForTheItemsInNewDeliveryRequest(io.cucumber.datatable.DataTable)">
+                <span>And Provide dlvItemNum plannedDlvBoxQty and minimumBoxes for the Items in new Delivery Request</span>
+      <div><table class='markup-table table '><tr><td>itemSeq</td><td>plannedDlvBoxQty</td><td>minimumBoxes</td></tr><tr><td>000010</td><td>2</td><td>2</td></tr><tr><td>000020</td><td>2</td><td>2</td></tr><tr><td>000030</td><td>2</td><td>2</td></tr><tr><td>000040</td><td>2</td><td>2</td></tr><tr><td>000050</td><td>2</td><td>2</td></tr><tr><td>000060</td><td>2</td><td>2</td></tr><tr><td>000070</td><td>2</td><td>2</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.ConfirmDeliverySteps.userCallsTheConfirmDeliverySEndpointToConfirmTheDeliveryRequest()">
+                <span>When User calls the Confirm Delivery's endpoint to confirm the Delivery Request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.verifyThatStatusCodeBeEqualTo(java.lang.String)">
+                <span>Then verify that status code be equal to "200"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="62"><span class="badge log pass-bg mr-2">Pass</span>Verify the Functionality of Get Delivery by Delivery Number and Truck Type</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.giveUsernameAndPasswordForAccessToken(io.cucumber.datatable.DataTable)">
+                <span>Given Give Username and Password for Access Token</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>101201</td></tr><tr><td>password</td><td>Dmart@12345</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GetDeliveriesSteps.provideDlvNumberAndTruckTypeToGetConfirmedDeliveryRequest()">
+                <span>And Provide dlvNumber and truckType to get confirmed delivery request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GetDeliveriesSteps.userCallsTheGetDeliveryByDlvNumberAndTruckTypeToGetTheConfirmedDelivery()">
+                <span>When User calls the get delivery by dlvNumber and truckType to get the confirmed delivery</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.verifyThatStatusCodeBeEqualTo(java.lang.String)">
+                <span>Then verify that status code be equal to "200"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.ConfirmDeliverySteps.verifyThatNewDeliveryIsConfirmedSuccessfully()">
+                <span>And Verify that new delivery is confirmed successfully</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="81"><span class="badge log pass-bg mr-2">Pass</span>Verify the functionality of CreateTOWithListOftransferOrderItems</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.giveUsernameAndPasswordForAccessToken(io.cucumber.datatable.DataTable)">
+                <span>Given Give Username and Password for Access Token</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>101201</td></tr><tr><td>password</td><td>Dmart@12345</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.giveUsernameAndPasswordForAccessToken(io.cucumber.datatable.DataTable)">
+                <span>Given Give Username and Password for Access Token</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>integrator</td></tr><tr><td>password</td><td>3poXy$6o29</td></tr><tr><td>requestId</td><td>0000001376364111</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.CreateTOStep.assigningMainMandatoryFieldsToCreateTOWithListOftransferOrderItems(io.cucumber.datatable.DataTable)">
+                <span>And Assigning Main Mandatory fields to CreateTOWithListOftransferOrderItems</span>
+      <div><table class='markup-table table '><tr><td>whNumber</td><td>114</td></tr><tr><td>srcPlant</td><td>1014</td></tr><tr><td>destPlant</td><td>4019</td></tr><tr><td>grpDlv</td><td>0004362630</td></tr><tr><td>movementType</td><td>850</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.CreateTOStep.provideTransferOrderItemsToCreateTOWithListOftransferOrderItems(io.cucumber.datatable.DataTable)">
+                <span>And Provide transferOrderItems to CreateTOWithListOftransferOrderItems</span>
+      <div><table class='markup-table table '><tr><td>txfOrdItemSeq</td><td>matNumber</td><td>matDesc</td><td>ean</td><td>batchNum</td><td>srcStorageType</td><td>srcStorageBin</td><td>srcQty</td><td>caselot</td><td>uom</td><td>mrp</td><td>itemWeight</td><td>itemVolume</td><td>itemType</td><td>binSeq</td><td>bbDate</td><td>storageLoc</td><td>destStorageType</td><td>palletQty</td></tr><tr><td>0001</td><td>500017406</td><td>ORAL B KIDS 2+ YEAR TOOTHBRUSH(3N)</td><td>4902430905183</td><td>2503210050</td><td>FRS</td><td>A030-14-1B</td><td>96.000</td><td>48.00</td><td>EA</td><td>50.00</td><td>0.067</td><td>0.021</td><td>ZFNF</td><td>3982</td><td></td><td>3000</td><td>200</td><td>1728.000</td></tr><tr><td>0002</td><td>500017575</td><td>COLGATE MAXFRESH BLUE GEL TP(300G)</td><td>8901314524010</td><td>0103210170</td><td>FRS</td><td>A030-14-1B</td><td>96.000</td><td>48.00</td><td>EA</td><td>170.00</td><td>0.360</td><td>0.027</td><td>ZFNF</td><td>3904</td><td></td><td>3000</td><td>200</td><td>1440.000</td></tr><tr><td>0003</td><td>500017602</td><td>GRACE CITRUS PASSI SHOWER GEL 250ML</td><td>8903363007247</td><td>0103210150</td><td>FRS</td><td>A033-07-1A</td><td>72.000</td><td>36.00</td><td>EA</td><td>150.00</td><td>0.369</td><td>0.022</td><td>ZFNF</td><td>4143</td><td></td><td>3000</td><td>200</td><td>1440.000</td></tr><tr><td>0004</td><td>500017603</td><td>GRACE DEEP IMPACT SHOWER GEL 250M</td><td>8903363007254</td><td>0103210150</td><td>FRS</td><td>A033-29-1A</td><td>72.000</td><td>36.00</td><td>EA</td><td>150.00</td><td>0.303</td><td>0.022</td><td>ZFNF</td><td>4319</td><td></td><td>3000</td><td>200</td><td>1440.000</td></tr><tr><td>0005</td><td>500017671</td><td>MEADOWS AIR FRESHENER LAV BLS-240ML</td><td>8903363006868</td><td>0103210149</td><td>FRS</td><td>A032-09-1B</td><td>96.000</td><td>48.00</td><td>EA</td><td>149.00</td><td>0.242</td><td>0.032</td><td>ZFNF</td><td>4161</td><td></td><td>3000</td><td>200</td><td>1152.000</td></tr><tr><td>0006</td><td>500018038</td><td>BOROPLUS ALOV HAL CH KES GEL(150ML)</td><td>8901248154031</td><td>0103210110</td><td>FRS</td><td>A029-03-1A</td><td>96.000</td><td>48.00</td><td>EA</td><td>110.00</td><td>0.215</td><td>0.028</td><td>ZFNF</td><td>3583</td><td></td><td>3000</td><td>200</td><td>1056.000</td></tr><tr><td>0007</td><td>500018258</td><td>PAMPERS ALOE BABY WIPS(72N)</td><td>4987176023476</td><td>0101210199</td><td>FRS</td><td>A019-06-1B</td><td>96.000</td><td>48.00</td><td>EA</td><td>199.00</td><td>0.250</td><td>0.099</td><td>ZFNF</td><td>2464</td><td></td><td>3000</td><td>200</td><td>648.000</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.CreateTOStep.userCallsTheToCreateTOEndPointToCreateTOWithListOftransferOrderItems()">
+                <span>When User calls the to create TO End point to CreateTOWithListOftransferOrderItems</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.verifyThatStatusCodeBeEqualTo(java.lang.String)">
+                <span>Then verify that status code be equal to "201"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="103"><span class="badge log pass-bg mr-2">Pass</span>verify the functionality of GetTOEndPoint</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.giveUsernameAndPasswordForAccessToken(io.cucumber.datatable.DataTable)">
+                <span>Given Give Username and Password for Access Token</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>101201</td></tr><tr><td>password</td><td>Dmart@12345</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GetTOstep.sendGetTOEndPointToGetTheData()">
+                <span>When send GetTO End point to get the data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.verifyThatStatusCodeBeEqualTo(java.lang.String)">
+                <span>Then verify that status code be equal to "200"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GetTOstep.validateResponseBodyOfGetToEndPoint()">
+                <span>And validate Response body of  GetToEndPoint</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="119"><span class="badge log pass-bg mr-2">Pass</span>Check-In Picker with valid data</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.giveUsernameAndPasswordForAccessToken(io.cucumber.datatable.DataTable)">
+                <span>Given Give Username and Password for Access Token</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>101201</td></tr><tr><td>password</td><td>Dmart@12345</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.PickerCheckInSteps.providePickerSDetailsToCheckInPickerIntoDC()">
+                <span>And Get Picker's details to Check-In Picker into DC</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.PickerCheckInSteps.userCallsThePickerCheckInSEndpointToCheckInThePicker()">
+                <span>When User calls the Picker Check-In's endpoint to check-in the Picker</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.verifyThatStatusCodeBeEqualTo(java.lang.String)">
+                <span>Then verify that status code be equal to "200"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="135"><span class="badge log pass-bg mr-2">Pass</span>Verify the functionality of Picker Presence</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.giveUsernameAndPasswordForAccessToken(io.cucumber.datatable.DataTable)">
+                <span>Given Give Username and Password for Access Token</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>101201</td></tr><tr><td>password</td><td>Dmart@12345</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.PickerPresenceSteps.userCallsThePickerPresenceEndpointToGetTheCheckedInPickers()">
+                <span>When User calls the Picker Presence endpoint to get the checked-in Pickers</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.verifyThatStatusCodeBeEqualTo(java.lang.String)">
+                <span>Then verify that status code be equal to "200"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.PickerPresenceSteps.verifyTheCheckedInPickerDetails()">
+                <span>And Verify the Checked-In Picker details</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="151"><span class="badge log pass-bg mr-2">Pass</span>Assign new Delivery to Picker with valid data</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.giveUsernameAndPasswordForAccessToken(io.cucumber.datatable.DataTable)">
+                <span>Given Give Username and Password for Access Token</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>101201</td></tr><tr><td>password</td><td>Dmart@12345</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.AssignPickerSteps.getDeliveryDetailsAndAssigneeIdToAssignDeliveryToPicker()">
+                <span>And Get delivery details and assigneeId to assign delivery to picker</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.AssignPickerSteps.provideHuMaterialAndDestSiteIdForADeliveryToBeAssigned(io.cucumber.datatable.DataTable)">
+                <span>And Provide huMaterial and destSiteId for a delivery to be assigned</span>
+      <div><table class='markup-table table '><tr><td>huMaterial</td><td>201</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.AssignPickerSteps.userCallsTheAssignPickerEndpointToAssignDeliveryToPicker()">
+                <span>When User calls the Assign Picker endpoint to assign delivery to Picker</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.verifyThatStatusCodeBeEqualTo(java.lang.String)">
+                <span>Then verify that status code be equal to "200"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="170"><span class="badge log pass-bg mr-2">Pass</span>Get TO's Details with valid data</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.giveUsernameAndPasswordForAccessToken(io.cucumber.datatable.DataTable)">
+                <span>Given Give Username and Password for Access Token</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>101201</td></tr><tr><td>password</td><td>Dmart@12345</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GetTODetailsSteps.provideDeliveryNumberToGetTheDetailsOfTO()">
+                <span>And Get delivery number to get the details of TO</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GetTODetailsSteps.userCallsTheGetTODetailsByDeliveryNumbersEndpointToGetTOSDetails()">
+                <span>When User calls the Get TO details by delivery numbers endpoint to get TO's details</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.verifyThatStatusCodeBeEqualTo(java.lang.String)">
+                <span>Then verify that status code be equal to "200"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GetTODetailsSteps.verifyThatItemsAreAssignedToPicker()">
+                <span>And Verify that items are assigned to Picker</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="189"><span class="badge log pass-bg mr-2">Pass</span>Verify the functionality of Get Picker</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.giveUsernameAndPasswordForAccessToken(io.cucumber.datatable.DataTable)">
+                <span>Given Give Username and Password for Access Token</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>101201</td></tr><tr><td>password</td><td>Dmart@12345</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GetPicker.provideDcIdToGetTheCheckedInPickerSDetails(io.cucumber.datatable.DataTable)">
+                <span>And Provide dcId to get the checked-in Picker's details</span>
+      <div><table class='markup-table table '><tr><td>siteId</td><td>1014</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GetPicker.userCallsTheGetPickerEndpointToGetCheckedInPickers()">
+                <span>When User calls the Get Picker endpoint to get checked-in Pickers</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.verifyThatStatusCodeBeEqualTo(java.lang.String)">
+                <span>Then verify that status code be equal to "200"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GetPicker.verifyThatDeliveryIsAssignedToPicker()">
+                <span>And Verify that delivery is assigned to picker</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="208"><span class="badge log pass-bg mr-2">Pass</span>Verify vehicle is assigned for a Delivery with valid data</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.giveUsernameAndPasswordForAccessToken(io.cucumber.datatable.DataTable)">
+                <span>Given Give Username and Password for Access Token</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>101201</td></tr><tr><td>password</td><td>Dmart@12345</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.AssignVehicleSteps.provideDockAndGetDeliveryNumberToWhichVehicleIsToBeAssigned(io.cucumber.datatable.DataTable)">
+                <span>And Provide dock and get delivery number to which vehicle is to be assigned</span>
+      <div><table class='markup-table table '><tr><td>dock</td><td>ACE</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.AssignVehicleSteps.provideVehicleTypeAndVehicleNumberForADeliveryToBeAssignedVehicle(io.cucumber.datatable.DataTable)">
+                <span>And Provide vehicle type and vehicle number for a delivery to be assigned vehicle</span>
+      <div><table class='markup-table table '><tr><td>vehicleType</td><td>vehicleRegNum</td></tr><tr><td>ACE</td><td>MH02MB9876</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.AssignVehicleSteps.userCallsTheAssignVehicleSEndpointToAssignVehicleForADelivery()">
+                <span>When User calls the assign vehicle's endpoint to assign vehicle for a delivery</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.verifyThatStatusCodeBeEqualTo(java.lang.String)">
+                <span>Then verify that status code be equal to "200"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="227"><span class="badge log pass-bg mr-2">Pass</span>Verify user gets the list of dispatch delivery</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.giveUsernameAndPasswordForAccessToken(io.cucumber.datatable.DataTable)">
+                <span>Given Give Username and Password for Access Token</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>101201</td></tr><tr><td>password</td><td>Dmart@12345</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GetDispatchDeliverySteps.userCallsTheDispatchDeliveryEndpointToGetTheListOfDispatchDelivery()">
+                <span>When User calls the dispatch delivery endpoint to get the list of dispatch delivery</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GenericSteps.verifyThatStatusCodeBeEqualTo(java.lang.String)">
+                <span>Then verify that status code be equal to "200"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.dmartLabs.stepdefinitions.GetDispatchDeliverySteps.verifyThatVehicleIsAssignedForADelivery()">
+                <span>And Verify that vehicle is assigned for a delivery</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">13</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@ConfirmDeliveryDT</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@ConfirmDeliveryDT</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:34:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='43'>Verify the functionality of confirm delivery with valid data</a>
+<div class="">
+<span class="badge badge-default">PWP Flow.Verify the functionality of confirm delivery with valid data</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@DispatcDeliveriesDetails</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@DispatcDeliveriesDetails</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:35:01 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='227'>Verify user gets the list of dispatch delivery</a>
+<div class="">
+<span class="badge badge-default">PWP Flow.Verify user gets the list of dispatch delivery</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GetTO</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GetTO</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:34:52 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='103'>verify the functionality of GetTOEndPoint</a>
+<div class="">
+<span class="badge badge-default">PWP Flow.verify the functionality of GetTOEndPoint</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@CreateOneDeliveryWithListOfItemsUsingDT</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CreateOneDeliveryWithListOfItemsUsingDT</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:34:38 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Verify the functionality of CreateOneDeliveryWithListOfItemsUsingDT</a>
+<div class="">
+<span class="badge badge-default">PWP Flow.Verify the functionality of CreateOneDeliveryWithListOfItemsUsingDT</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GetDelCD</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GetDelCD</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:34:50 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='62'>Verify the Functionality of Get Delivery by Delivery Number and Truck Type</a>
+<div class="">
+<span class="badge badge-default">PWP Flow.Verify the Functionality of Get Delivery by Delivery Number and Truck Type</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@PickerCheckIn</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@PickerCheckIn</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:34:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='119'>Check-In Picker with valid data</a>
+<div class="">
+<span class="badge badge-default">PWP Flow.Check-In Picker with valid data</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@CreateTOForOriginalDelivery</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CreateTOForOriginalDelivery</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:34:51 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='81'>Verify the functionality of CreateTOWithListOftransferOrderItems</a>
+<div class="">
+<span class="badge badge-default">PWP Flow.Verify the functionality of CreateTOWithListOftransferOrderItems</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@AssignPicker</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@AssignPicker</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:34:55 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='151'>Assign new Delivery to Picker with valid data</a>
+<div class="">
+<span class="badge badge-default">PWP Flow.Assign new Delivery to Picker with valid data</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GetListofDeliveries</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GetListofDeliveries</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:34:46 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='24'>verify the functionality of GetListofDeliveriesEndpoint</a>
+<div class="">
+<span class="badge badge-default">PWP Flow.verify the functionality of GetListofDeliveriesEndpoint</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@VehicleAssign</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@VehicleAssign</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:35:00 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='208'>Verify vehicle is assigned for a Delivery with valid data</a>
+<div class="">
+<span class="badge badge-default">PWP Flow.Verify vehicle is assigned for a Delivery with valid data</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@PickerPresence</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@PickerPresence</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:34:54 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='135'>Verify the functionality of Picker Presence</a>
+<div class="">
+<span class="badge badge-default">PWP Flow.Verify the functionality of Picker Presence</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TOBYDELIVERYNUM</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TOBYDELIVERYNUM</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:34:56 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='170'>Get TO's Details with valid data</a>
+<div class="">
+<span class="badge badge-default">PWP Flow.Get TO's Details with valid data</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GETPICKER</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GETPICKER</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:34:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='189'>Verify the functionality of Get Picker</a>
+<div class="">
+<span class="badge badge-default">PWP Flow.Verify the functionality of Get Picker</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
